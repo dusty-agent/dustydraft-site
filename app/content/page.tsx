@@ -16,89 +16,115 @@ export default function ContentPage() {
         </section>
   
         {/* Channels */}
-        <section className="max-w-5xl mx-auto px-6 py-12">
+
+<section className="max-w-5xl mx-auto px-6 py-12">
+
+<h2 className="text-3xl font-bold mb-8">
+  Channels
+</h2>
+
+<div className="grid md:grid-cols-3 gap-6">
+
+```
+<a
+href="https://youtu.be/1vrROZF3BzQ?si=NfvFFs2ljwaTceOZ"
+target="_blank"
+rel="noopener noreferrer"
+className="border border-black/10 rounded-2xl p-6 bg-white/30 block hover:bg-white/50 transition"
+>
+<h3 className="text-2xl font-semibold">
+  YouTube →
+</h3>
+
+<p className="mt-3 text-neutral-600">
+  Videos, tutorials and creative experiments.
+</p>
+</a>
+
+<a
+href="https://blog.naver.com/assetpicker"
+target="_blank"
+rel="noopener noreferrer"
+className="border border-black/10 rounded-2xl p-6 bg-white/30 block hover:bg-white/50 transition"
+>
+<h3 className="text-2xl font-semibold">
+  AssetPicker Journal →
+</h3>
+
+<p className="mt-3 text-neutral-600">
+  Research notes, essays and investment insights.
+</p>
+</a>
+
+<a
+href="https://www.linkedin.com/"
+target="_blank"
+rel="noopener noreferrer"
+className="border border-black/10 rounded-2xl p-6 bg-white/30 block hover:bg-white/50 transition"
+>
+<h3 className="text-2xl font-semibold">
+  LinkedIn →
+</h3>
+
+<p className="mt-3 text-neutral-600">
+  Professional updates and announcements.
+</p>
+</a>
+```
+
+</div>
+
+</section>
+
+{/* Publications */}
+
+<section className="max-w-5xl mx-auto px-6 py-12">
+
+<h2 className="text-3xl font-bold mb-8">
+  Publications
+</h2>
+
+<div className="space-y-6">
+
+```
+<div className="border border-black/10 rounded-2xl p-6 bg-white/30">
+
+<span className="text-2xl font-semibold">
+  Rala's Tech Notes
+</span>
+
+<p className="mt-3 text-neutral-600">
+  Technical writing, engineering experiments and build logs.
+</p>
+
+<p className="mt-4 text-sm text-neutral-500">
+  Coming Soon
+</p>
+
+</div>
+
+<div className="border border-black/10 rounded-2xl p-6 bg-white/30">
+
+<span className="text-2xl font-semibold">
+  Development Journal
+</span>
+
+<p className="mt-3 text-neutral-600">
+  Notes on software, AI systems and independent products.
+</p>
+
+<p className="mt-4 text-sm text-neutral-500">
+  Coming Soon
+</p>
+
+</div>
+```
+
+</div>
+
+</section>
+
   
-          <h2 className="text-3xl font-bold mb-8">
-            Channels
-          </h2>
-  
-          <div className="grid md:grid-cols-3 gap-6">
-  
-            <a
-              href="#"
-              className="border border-black/10 rounded-2xl p-6 bg-white/30 block hover:bg-white/50 transition"
-            >
-              <h3 className="text-2xl font-semibold">
-                YouTube
-              </h3>
-  
-              <p className="mt-3 text-neutral-600">
-                Videos, tutorials and project updates.
-              </p>
-            </a>
-  
-            <a
-              href="#"
-              className="border border-black/10 rounded-2xl p-6 bg-white/30 block hover:bg-white/50 transition"
-            >
-              <h3 className="text-2xl font-semibold">
-                Tech Notes
-              </h3>
-  
-              <p className="mt-3 text-neutral-600">
-                Development logs and engineering articles.
-              </p>
-            </a>
-  
-            <a
-              href="#"
-              className="border border-black/10 rounded-2xl p-6 bg-white/30 block hover:bg-white/50 transition"
-            >
-              <h3 className="text-2xl font-semibold">
-                LinkedIn
-              </h3>
-  
-              <p className="mt-3 text-neutral-600">
-                Professional updates and announcements.
-              </p>
-            </a>
-  
-          </div>
-  
-        </section>
-  
-        {/* Publications */}
-        <section className="max-w-5xl mx-auto px-6 py-12">
-  
-          <h2 className="text-3xl font-bold mb-8">
-            Publications
-          </h2>
-  
-          <div className="space-y-6">
-  
-            <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
-              <h3 className="text-2xl font-semibold">
-                Rala's Tech Notes
-              </h3>
-  
-              <p className="mt-3 text-neutral-600">
-                Technical writing, experiments and build logs.
-              </p>
-            </div>
-  
-            <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
-              <h3 className="text-2xl font-semibold">
-                Development Journal
-              </h3>
-  
-              <p className="mt-3 text-neutral-600">
-                Notes on software, AI and digital products.
-              </p>
-            </div>
-  
-          </div>
-  
-        </section>
   
         {/* Media Kit */}
         <section className="max-w-5xl mx-auto px-6 py-16">
