@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
@@ -7,20 +6,20 @@ export default function Header() {
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
 
       <Link href="/">
-        <Image
-        src="/images/dd.png"
+            <img
+        src="./images/dd.png"
         alt="Dusty Draft"
         width={32}
         height={32}
         className="rounded-full"
-        />
-    </Link>
+      />
+      </Link>
 
         <nav className="flex gap-6 text-sm">
           <Link href="/studio">Studio</Link>
           <Link href="/products">Products</Link>
           <Link href="/content">Content</Link>
-          <Link href="/resource">Resources</Link>
+          <Link href="/resource">Resource</Link>
           <Link href="/company">Company</Link>
         </nav>
 

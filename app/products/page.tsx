@@ -113,12 +113,12 @@ export default function ProductsPage() {
             <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
 
             <a
-                href="https://youtu.be/1vrROZF3BzQ?si=NfvFFs2ljwaTceOZ"
+                href="https://exoticordinary.com/voutique"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl font-semibold hover:underline"
             >
-                The Exotic Boutique™ →
+                The Exotic Voutique™ →
             </a>
 
             <p className="mt-3 text-neutral-600">

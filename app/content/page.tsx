@@ -25,7 +25,6 @@ export default function ContentPage() {
 
 <div className="grid md:grid-cols-3 gap-6">
 
-```
 <a
 href="https://youtu.be/1vrROZF3BzQ?si=NfvFFs2ljwaTceOZ"
 target="_blank"
@@ -70,7 +69,6 @@ className="border border-black/10 rounded-2xl p-6 bg-white/30 block hover:bg-whi
   Professional updates and announcements.
 </p>
 </a>
-```
 
 </div>
 
@@ -86,7 +84,6 @@ className="border border-black/10 rounded-2xl p-6 bg-white/30 block hover:bg-whi
 
 <div className="space-y-6">
 
-```
 <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
 
 <span className="text-2xl font-semibold">
@@ -118,13 +115,9 @@ className="border border-black/10 rounded-2xl p-6 bg-white/30 block hover:bg-whi
 </p>
 
 </div>
-```
-
 </div>
 
 </section>
-
-  
   
         {/* Media Kit */}
         <section className="max-w-5xl mx-auto px-6 py-16">

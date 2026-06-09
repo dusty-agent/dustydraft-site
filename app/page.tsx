@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -20,13 +19,11 @@ export default function Home() {
           We build software, AI services and digital products
           through research, experimentation and continuous learning.
         </p>
-        <Image
-          src="/images/hero.png"
-          alt="Dusty Draft"
-          width={1600}
-          height={900}
-          className="rounded-3xl mt-10"
-        />
+        <img
+  src="/images/hero.png"
+  alt="Dusty Draft"
+  className="rounded-3xl mt-10 w-full"
+/>
       </section>
 
       {/* What We Do */}
