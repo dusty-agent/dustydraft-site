@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "DUSTY DRAFT",
   description:
-    "Development Studio & Product Lab. Building software, AI services and digital products.",
+    "Development Studio & Intelligence Lab. Building software, AI services and digital products.",
 
   keywords: [
     "AI",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "DUSTY DRAFT",
-    description: "Development Studio & Product Lab",
+    description: "Development Studio & Intelligence Lab",
     images: ["/images/hero.png"],
   },
 };
