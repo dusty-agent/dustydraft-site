@@ -7,7 +7,7 @@ export default function Header() {
 
       <Link href="/">
             <img
-        src="./images/dd.png"
+        src="/images/dd.png"
         alt="Dusty Draft"
         width={32}
         height={32}
@@ -15,13 +15,14 @@ export default function Header() {
       />
       </Link>
 
-        <nav className="flex gap-6 text-sm">
-          <Link href="/studio">Studio</Link>
-          <Link href="/products">Products</Link>
-          <Link href="/content">Content</Link>
-          <Link href="/resource">Resource</Link>
-          <Link href="/company">Company</Link>
-        </nav>
+      <nav className="flex gap-6 text-sm">
+        <Link href="/insights">Insights</Link>
+        <Link href="/services">Services</Link>
+        <Link href="/products">Products</Link>
+        <Link href="/studio">Studio</Link>
+        <Link href="/content">Content</Link>
+        <Link href="/company">Company</Link>
+      </nav>
 
       </div>
     </header>

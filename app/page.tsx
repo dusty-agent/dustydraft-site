@@ -12,18 +12,24 @@ export default function Home() {
         </h1>
 
         <p className="mt-6 italic text-xl text-neutral-700">
-          Development Studio & Product Lab
+          Development Studio & Intelligence Lab
         </p>
 
         <p className="mt-10 text-lg text-neutral-800 max-w-2xl">
-          We build software, AI services and digital products
-          through research, experimentation and continuous learning.
+          We help ideas, businesses and properties move
+          from possibility to reality through assessment,
+          analysis and implementation.
         </p>
         <img
-  src="/images/hero.png"
-  alt="Dusty Draft"
-  className="rounded-3xl mt-10 w-full"
-/>
+            src="/images/hero.png"
+            alt="Dusty Draft"
+            className="rounded-3xl mt-10 w-full"
+          />
+
+        <p className="mt-10 text-lg text-neutral-800 max-w-2xl">
+          We assess what exists, identify what is possible,
+          and design a path forward.
+        </p>
       </section>
 
       {/* What We Do */}
@@ -33,9 +39,9 @@ export default function Home() {
           What We Do
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-4 gap-6">
 
-          <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
+          {/* <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
             <h3 className="text-xl font-semibold">
               Software Development
             </h3>
@@ -63,8 +69,47 @@ export default function Home() {
             <p className="mt-3 text-neutral-600">
               Experimental tools, platforms and independent products.
             </p>
+          </div> */}
+
+          <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
+            <h3 className="text-xl font-semibold">
+              Building Intelligence
+            </h3>
+
+            <p className="mt-3 text-neutral-600">
+              Digital assessments, operational analytics and technology roadmaps.
+            </p>
           </div>
 
+          <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
+            <h3 className="text-xl font-semibold">
+              Data Intelligence
+            </h3>
+
+            <p className="mt-3 text-neutral-600">
+              Analytics, diagnostics and actionable insights from data.
+            </p>
+          </div>
+
+          <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
+            <h3 className="text-xl font-semibold">
+              AI & Automation
+            </h3>
+
+            <p className="mt-3 text-neutral-600">
+              AI workflows, intelligent assistants and automation systems.
+            </p>
+          </div>
+
+          <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
+            <h3 className="text-xl font-semibold">
+              Digital Products
+            </h3>
+
+            <p className="mt-3 text-neutral-600">
+              Experimental tools and independent software ventures.
+            </p>
+          </div>
         </div>
 
       </section>
@@ -77,7 +122,18 @@ export default function Home() {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-6">
+          <Link
+            href="/insights"
+            className="border border-black/10 rounded-2xl p-8 bg-white/30 hover:bg-white/50 transition"
+          >
+            <h3 className="text-2xl font-semibold">
+              Insights
+            </h3>
 
+            <p className="mt-3 text-neutral-600">
+              Assessments, diagnostics and intelligence frameworks.
+            </p>
+          </Link>
           <Link
             href="/studio"
             className="border border-black/10 rounded-2xl p-8 bg-white/30 hover:bg-white/50 transition"
