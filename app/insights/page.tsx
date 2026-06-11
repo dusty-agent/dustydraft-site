@@ -154,7 +154,7 @@ export default function InsightsPage() {
         <div className="border border-black/10 rounded-2xl p-8 bg-white/30">
 
             <p className="text-lg md:text-xl font-medium text-center text-neutral-700">
-            AS-IS → Assessment → TO-BE → Validation → Implementation
+            AS-IS → Assessment/diagnosis → TO-BE → Validation → Implementation
             </p>
 
         </div>
