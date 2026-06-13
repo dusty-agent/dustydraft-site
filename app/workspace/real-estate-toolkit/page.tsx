@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+
+
 export default function RealEstateToolkitPage() {
   const tools = [
     {
@@ -49,7 +51,7 @@ export default function RealEstateToolkitPage() {
   
     return (
 
-      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-black/10"></header>
+      
       <main className="min-h-screen bg-[#ede4da] text-neutral-900">
         {/* Hero */}
         <section className="max-w-5xl mx-auto px-6 py-20">
