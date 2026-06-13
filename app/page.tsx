@@ -174,12 +174,25 @@ export default function Home() {
             </p>
           </Link>
 
-          <Link
+          {/* <Link
             href="/company"
             className="border border-black/10 rounded-2xl p-8 bg-white/30 hover:bg-white/50 transition"
           >
             <h3 className="text-2xl font-semibold">
               Company
+            </h3>
+
+            <p className="mt-3 text-neutral-600">
+              About, contact information and business details.
+            </p>
+          </Link> */}
+
+          <Link
+            href="/products/real-estate-toolkit/investment-analysis"
+            className="border border-black/10 rounded-2xl p-8 bg-white/30 hover:bg-white/50 transition"
+          >
+            <h3 className="text-2xl font-semibold">
+              투자분석계산
             </h3>
 
             <p className="mt-3 text-neutral-600">
