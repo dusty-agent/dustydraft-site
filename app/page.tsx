@@ -77,7 +77,8 @@ export default function Home() {
             </h3>
 
             <p className="mt-3 text-neutral-600">
-              Digital assessments, operational analytics and technology roadmaps.
+            Assessment and analysis of buildings,
+            facilities and operational environments.
             </p>
           </div>
 
