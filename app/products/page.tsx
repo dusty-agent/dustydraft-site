@@ -24,7 +24,7 @@ export default function ProductsPage() {
 
           {/* Assist */}
           <a
-            href="/assist"
+            href="/products/assist"
             className="border border-black/10 rounded-2xl p-6 bg-white/30 block hover:bg-white/50 transition"
           >
             <h3 className="text-2xl font-semibold">
@@ -38,7 +38,7 @@ export default function ProductsPage() {
 
           {/* Self Motivation */}
           <a
-            href="/self-motivation-toolkit"
+            href="/products/self-motivation-toolkit"
             className="border border-black/10 rounded-2xl p-6 bg-white/30 block hover:bg-white/50 transition"
           >
             <h3 className="text-2xl font-semibold">

@@ -13,6 +13,8 @@ export default function InvestmentAnalysisPage() {
   const [operatingExpenses, setOperatingExpenses] = useState("");
   const [interestExpense, setInterestExpense] = useState("");
 
+  const [unit, setUnit] = useState(10000);
+
   // 임시저장
   const saveDraft = () => {
     localStorage.setItem(
@@ -24,6 +26,7 @@ export default function InvestmentAnalysisPage() {
         grossIncome,
         operatingExpenses,
         interestExpense,
+        unit,
       })
     );
   
@@ -45,12 +48,14 @@ export default function InvestmentAnalysisPage() {
     setGrossIncome(data.grossIncome ?? "");
     setOperatingExpenses(data.operatingExpenses ?? "");
     setInterestExpense(data.interestExpense ?? "");
+    setUnit(data.unit ?? 10000);
   }, []);
 
   // 오늘 날짜 
   const today = new Date()
   .toISOString()
   .slice(0, 10);
+
   // txt 추출
   const exportTxt = () => {
 
@@ -62,18 +67,22 @@ export default function InvestmentAnalysisPage() {
     const content = `
         부동산 투자 분석 결과
         Investment Analysis Calculator
+
+        작성일: ${today}
+        입력 단위: ${unitLabel}
         
         =================================
         
         [입력값]
-        
-        매입가: ${format(Number(purchasePrice))}
-        보증금 승계: ${format(Number(deposit))}
-        대출금: ${format(Number(loan))}
-        
-        연 임대수입: ${format(Number(grossIncome))}
-        운영비: ${format(Number(operatingExpenses))}
-        연 이자비용: ${format(Number(interestExpense))}
+        입력 단위: ${unitLabel}
+
+        매입가: ${purchasePrice} ${unitLabel}
+        보증금 승계: ${deposit} ${unitLabel}
+        대출금: ${loan} ${unitLabel}
+
+        연 임대수입: ${grossIncome} ${unitLabel}
+        운영비: ${operatingExpenses} ${unitLabel}
+        연 이자비용: ${interestExpense} ${unitLabel}
         
         =================================
         
@@ -141,13 +150,16 @@ export default function InvestmentAnalysisPage() {
         
         [입력값]
         
-        매입가: ${format(Number(purchasePrice))}
-        보증금 승계: ${format(Number(deposit))}
-        대출금: ${format(Number(loan))}
+        입력 단위: ${unitLabel}
+
+        매입가: ${purchasePrice} ${unitLabel}
+        보증금 승계: ${deposit} ${unitLabel}
+        대출금: ${loan} ${unitLabel}
+
+        연 임대수입: ${grossIncome} ${unitLabel}
+        운영비: ${operatingExpenses} ${unitLabel}
+        연 이자비용: ${interestExpense} ${unitLabel}
         
-        연 임대수입: ${format(Number(grossIncome))}
-        운영비: ${format(Number(operatingExpenses))}
-        연 이자비용: ${format(Number(interestExpense))}
         
         [분석 결과]
         
@@ -209,16 +221,25 @@ export default function InvestmentAnalysisPage() {
   
   };
 
+  // 단위
+  const unitLabel =
+    unit === 1
+        ? "원"
+        : unit === 1000
+        ? "천원"
+        : unit === 10000
+        ? "만원"
+        : "백만원";
 
   const result = useMemo(() => {
 
-    const p = Number(purchasePrice);
-    const d = Number(deposit);
-    const l = Number(loan);
+    const p = Number(purchasePrice) * unit;
+    const d = Number(deposit) * unit;
+    const l = Number(loan) * unit;
 
-    const gi = Number(grossIncome);
-    const oe = Number(operatingExpenses);
-    const ie = Number(interestExpense);
+    const gi = Number(grossIncome) * unit;
+    const oe = Number(operatingExpenses) * unit;
+    const ie = Number(interestExpense) * unit;
 
     if (!p) return null;
 
@@ -256,12 +277,14 @@ export default function InvestmentAnalysisPage() {
     grossIncome,
     operatingExpenses,
     interestExpense,
+    unit,
   ]);
 
   const format = (n: number) =>
     new Intl.NumberFormat("ko-KR").format(
       Math.round(n)
     );
+
 
   return (
     <main className="min-h-screen bg-[#ede4da] text-neutral-900">
@@ -296,6 +319,35 @@ export default function InvestmentAnalysisPage() {
                 <h2 className="text-2xl font-semibold mb-6">
                     입력값 (Inputs)
                 </h2>
+
+                {/* 단위 선택 */}
+                <div className="mb-6">
+
+                    <div className="flex items-center gap-2 mb-2">
+
+                    <span className="text-sm font-medium">
+                        입력 단위
+                    </span>
+
+                    <span className="text-xs text-neutral-500">
+                        Input Unit
+                    </span>
+
+                    </div>
+
+                    <select
+                    value={unit}
+                    onChange={(e) => setUnit(Number(e.target.value))}
+                    className="w-full rounded-xl border border-black/10 p-3"
+                    >
+                    <option value={1}>원</option>
+                    <option value={1000}>천원</option>
+                    <option value={10000}>만원</option>
+                    <option value={1000000}>백만원</option>
+                    </select>
+
+                </div>
+                {/* 입력값들 */}
 
                 <div className="space-y-4">
 
