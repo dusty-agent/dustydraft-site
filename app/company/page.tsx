@@ -32,7 +32,7 @@ export default function CompanyPage() {
 
         <div className="border border-black/10 rounded-2xl p-8 bg-white/30">
           <p>Founder: Jang So Young</p>
-          <p className="mt-2">Email: soyoung@dustydraft.com</p>
+          <p className="mt-2">Email: soyoung@draft.best</p>
         </div>
       </section>
 
