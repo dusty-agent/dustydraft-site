@@ -20,13 +20,16 @@ export default function CapRateCalculatorPage() {
     <main className="min-h-screen bg-[#ede4da] text-neutral-900">
       {/* Hero */}
       <section className="max-w-4xl mx-auto px-6 py-20">
-        <h1 className="text-5xl font-bold">
-          Cap Rate Calculator
+      <h1 className="text-5xl font-bold">
+          자본환원율 계산기
         </h1>
 
-        <p className="mt-6 text-xl text-neutral-700">
-          Calculate capitalization rate using Net Operating Income (NOI)
-          and purchase price.
+        <p className="mt-4 text-xl text-neutral-700">
+          Cap Rate Calculator
+        </p>
+
+        <p className="mt-8 text-lg text-neutral-600">
+          순영업소득과 매입가를 기반으로 자본환원율을 계산합니다.
         </p>
       </section>
 
@@ -35,43 +38,52 @@ export default function CapRateCalculatorPage() {
         <div className="border border-black/10 rounded-2xl bg-white/30 p-8">
           <div className="space-y-6">
             <div>
-              <label className="block text-sm mb-2">
-                Annual NOI (₩)
-              </label>
+            <label className="block mb-2">
+              <span className="font-medium">
+                순영업소득
+              </span>
 
-              <input
-                type="number"
-                value={noi}
-                onChange={(e) => setNoi(e.target.value)}
-                placeholder="30000000"
-                className="w-full rounded-xl border border-black/10 bg-white px-4 py-3"
-              />
-            </div>
+              <span className="ml-2 text-sm text-neutral-500">
+                Net Operating Income (NOI)
+              </span>
+            </label>
 
-            <div>
-              <label className="block text-sm mb-2">
-                Purchase Price (₩)
-              </label>
+            <input
+              type="number"
+              value={noi}
+              onChange={(e) => setNoi(e.target.value)}
+              className="w-full rounded-xl border border-black/10 bg-white px-4 py-3"
+            />
+          </div>
 
-              <input
-                type="number"
-                value={purchasePrice}
-                onChange={(e) => setPurchasePrice(e.target.value)}
-                placeholder="500000000"
-                className="w-full rounded-xl border border-black/10 bg-white px-4 py-3"
-              />
-            </div>
+          <div>
+            <label className="block mb-2">
+              <span className="font-medium">
+                매입가
+              </span>
+
+              <span className="ml-2 text-sm text-neutral-500">
+                Purchase Price
+              </span>
+            </label>
+
+            <input
+              type="number"
+              value={purchasePrice}
+              onChange={(e) => setPurchasePrice(e.target.value)}
+              className="w-full rounded-xl border border-black/10 bg-white px-4 py-3"
+            />
           </div>
 
           <div className="mt-10 border-t border-black/10 pt-8">
-            <h2 className="text-2xl font-semibold">
-              Result
-            </h2>
+          <h2 className="text-2xl font-semibold">
+            분석 결과 (Results)
+          </h2>
 
             {capRate ? (
               <div className="mt-4">
-                <p className="text-sm text-neutral-600">
-                  Capitalization Rate
+                <p className="text-sm text-neutral-500">
+                  자본환원율 Cap Rate
                 </p>
 
                 <p className="text-5xl font-bold mt-2">
@@ -84,7 +96,7 @@ export default function CapRateCalculatorPage() {
               </p>
             )}
           </div>
-        </div>
+        </div> </div>
       </section>
 
       {/* Formula */}
@@ -109,6 +121,95 @@ export default function CapRateCalculatorPage() {
           </ul>
         </div>
       </section>
+      <section className="max-w-5xl mx-auto px-6 pb-20">
+
+  <div className="border-t border-black/10 pt-8">
+
+    <h2 className="text-lg font-medium text-neutral-700">
+      모아보기
+      <span className="ml-2 text-sm text-neutral-500">
+        Related Calculators
+      </span>
+    </h2>
+
+    <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+
+      <Link
+        href="/products/real-estate-toolkit/noi"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline"
+      >
+        순영업소득 (NOI)
+      </Link>
+
+      <Link
+        href="/products/real-estate-toolkit/cap-rate"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline"
+      >
+        자본환원율 (Cap Rate)
+      </Link>
+
+      <Link
+        href="/products/real-estate-toolkit/equity"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline"
+      >
+        실투자금 (Equity)
+      </Link>
+
+      <Link
+        href="/products/real-estate-toolkit/leverage"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline"
+      >
+        레버리지 (Leverage)
+      </Link>
+
+      <Link
+        href="/products/real-estate-toolkit/roe"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline"
+      >
+        자기자본수익률 (ROE)
+      </Link>
+
+      <Link
+        href="/products/real-estate-toolkit/loan-calculator"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline"
+      >
+        대출상환 (Loan)
+      </Link>
+
+    </div>
+
+    <div className="mt-8 text-sm text-neutral-600">
+
+      <span className="font-medium">
+        AssetPicker
+      </span>
+
+      <a
+        href="https://blog.naver.com/assetpicker"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="ml-3 underline"
+      >
+        방문하기 →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
     </main>
   );
 }

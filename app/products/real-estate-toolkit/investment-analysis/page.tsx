@@ -706,6 +706,8 @@ export default function InvestmentAnalysisPage() {
 
                     <Link
                     href="/products/real-estate-toolkit/noi"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="border border-black/10 rounded-xl p-4 bg-white/40 hover:bg-white/60 transition"
                     >
                     <div className="font-semibold">
@@ -719,6 +721,8 @@ export default function InvestmentAnalysisPage() {
 
                     <Link
                     href="/products/real-estate-toolkit/cap-rate"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="border border-black/10 rounded-xl p-4 bg-white/40 hover:bg-white/60 transition"
                     >
                     <div className="font-semibold">
@@ -732,6 +736,8 @@ export default function InvestmentAnalysisPage() {
 
                     <Link
                     href="/products/real-estate-toolkit/equity"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="border border-black/10 rounded-xl p-4 bg-white/40 hover:bg-white/60 transition"
                     >
                     <div className="font-semibold">
@@ -745,6 +751,8 @@ export default function InvestmentAnalysisPage() {
 
                     <Link
                     href="/products/real-estate-toolkit/leverage"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="border border-black/10 rounded-xl p-4 bg-white/40 hover:bg-white/60 transition"
                     >
                     <div className="font-semibold">
@@ -758,6 +766,8 @@ export default function InvestmentAnalysisPage() {
 
                     <Link
                     href="/products/real-estate-toolkit/roe"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="border border-black/10 rounded-xl p-4 bg-white/40 hover:bg-white/60 transition"
                     >
                     <div className="font-semibold">
@@ -796,7 +806,95 @@ export default function InvestmentAnalysisPage() {
                 </div>    
 
             </section>
+            <section className="max-w-5xl mx-auto px-6 pb-20">
 
+<div className="border-t border-black/10 pt-8">
+
+  <h2 className="text-lg font-medium text-neutral-700">
+    모아보기
+    <span className="ml-2 text-sm text-neutral-500">
+      Related Calculators
+    </span>
+  </h2>
+
+  <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+
+    <Link
+      href="/products/real-estate-toolkit/noi"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:underline"
+    >
+      순영업소득 (NOI)
+    </Link>
+
+    <Link
+      href="/products/real-estate-toolkit/cap-rate"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:underline"
+    >
+      자본환원율 (Cap Rate)
+    </Link>
+
+    <Link
+      href="/products/real-estate-toolkit/equity"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:underline"
+    >
+      실투자금 (Equity)
+    </Link>
+
+    <Link
+      href="/products/real-estate-toolkit/leverage"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:underline"
+    >
+      레버리지 (Leverage)
+    </Link>
+
+    <Link
+      href="/products/real-estate-toolkit/roe"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:underline"
+    >
+      자기자본수익률 (ROE)
+    </Link>
+
+    <Link
+      href="/products/real-estate-toolkit/loan-calculator"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:underline"
+    >
+      대출상환 (Loan)
+    </Link>
+
+  </div>
+
+  <div className="mt-8 text-sm text-neutral-600">
+
+    <span className="font-medium">
+      AssetPicker
+    </span>
+
+    <a
+      href="https://blog.naver.com/assetpicker"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="ml-3 underline"
+    >
+      방문하기 →
+    </a>
+
+  </div>
+
+</div>
+
+</section>
     </main>
   );
 }

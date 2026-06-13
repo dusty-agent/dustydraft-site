@@ -23,7 +23,11 @@ export default function Header() {
         <nav className="flex items-center gap-6 text-sm">
           <Link href="/insights">인사이트</Link>
 
-          <Link href="/products/real-estate-toolkit/investment-analysis">
+          <Link 
+            href="/products/real-estate-toolkit/investment-analysis"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             투자분석계산
           </Link>
 
