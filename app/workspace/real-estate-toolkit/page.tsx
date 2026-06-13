@@ -1,52 +1,55 @@
 import Link from "next/link";
+
 export default function RealEstateToolkitPage() {
   const tools = [
     {
       title: "투자분석계산",
       subtitle: "Investment Analysis Calculator",
-      href: "/products/real-estate-toolkit/investment-analysis",
+      href: "/workspace/real-estate-toolkit/investment-analysis",
       description: "NOI, Cap Rate, Equity, Leverage 및 ROE를 통합 분석합니다.",
       featured: true,
     },
     {
       title: "순영업소득",
       subtitle: "NOI Calculator",
-      href: "/products/real-estate-toolkit/noi",
+      href: "/workspace/real-estate-toolkit/noi",
       description: "임대수익과 운영비용을 기반으로 NOI를 계산합니다.",
     },
     {
       title: "자본환원율",
       subtitle: "Cap Rate Calculator",
-      href: "/products/real-estate-toolkit/cap-rate",
+      href: "/workspace/real-estate-toolkit/cap-rate",
       description: "NOI와 매입가를 기준으로 Cap Rate를 계산합니다.",
     },
     {
       title: "실투자금",
       subtitle: "Equity Calculator",
-      href: "/products/real-estate-toolkit/equity",
+      href: "/workspace/real-estate-toolkit/equity",
       description: "매입가, 보증금, 대출금을 반영하여 실투자금을 계산합니다.",
     },
     {
       title: "레버리지",
       subtitle: "Leverage Calculator",
-      href: "/products/real-estate-toolkit/leverage",
+      href: "/workspace/real-estate-toolkit/leverage",
       description: "레버리지 배수와 LTV를 계산합니다.",
     },
     {
       title: "자기자본수익률",
       subtitle: "ROE Calculator",
-      href: "/products/real-estate-toolkit/roe",
+      href: "/workspace/real-estate-toolkit/roe",
       description: "자기자본 대비 수익률을 계산합니다.",
     },
     {
       title: "대출상환",
       subtitle: "Loan Calculator",
-      href: "/products/real-estate-toolkit/loan-calculator",
+      href: "/workspace/real-estate-toolkit/loan-calculator",
       description: "원리금균등, 원금균등, 만기일시상환을 비교합니다.",
     },
   ];
   
     return (
+
+      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-black/10"></header>
       <main className="min-h-screen bg-[#ede4da] text-neutral-900">
         {/* Hero */}
         <section className="max-w-5xl mx-auto px-6 py-20">
