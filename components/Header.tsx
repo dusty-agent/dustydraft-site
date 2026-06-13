@@ -42,14 +42,35 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="absolute right-6 top-16 bg-white border rounded-xl shadow-lg p-4">
-          <div className="flex flex-col gap-3">
-            <Link href="/workspace">Workspace</Link>
-            <Link href="/library">Library</Link>
-            <Link href="/about">About</Link>
-          </div>
-        </div>
-      )}
+  <div className="absolute right-6 top-16 w-48 bg-white rounded-2xl border border-black/10 shadow-xl p-4">
+
+    <div className="flex flex-col">
+
+      <Link
+        href="/workspace"
+        className="px-3 py-2 rounded-lg hover:bg-neutral-100"
+      >
+        Workspace
+      </Link>
+
+      <Link
+        href="/library"
+        className="px-3 py-2 rounded-lg hover:bg-neutral-100"
+      >
+        Library
+      </Link>
+
+      <Link
+        href="/about"
+        className="px-3 py-2 rounded-lg hover:bg-neutral-100"
+      >
+        About
+      </Link>
+
+    </div>
+
+  </div>
+)}
 
     </header>
   );
