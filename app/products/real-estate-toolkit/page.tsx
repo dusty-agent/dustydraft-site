@@ -51,7 +51,7 @@ export default function RealEstateToolkitPage() {
         {/* Hero */}
         <section className="max-w-5xl mx-auto px-6 py-20">
           <h1 className="text-5xl font-bold">
-            부동산 툴킷
+            부동산 수익률 툴킷
           </h1>
 
           <p className="mt-4 text-xl text-neutral-700">

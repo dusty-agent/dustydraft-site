@@ -23,65 +23,6 @@ export default function WorkspacePage() {
 
       </section>
 
-      {/* Intelligence */}
-      <section className="max-w-5xl mx-auto px-6 py-12">
-
-        <h2 className="text-3xl font-bold mb-2">
-          인텔리전스
-        </h2>
-
-        <p className="text-neutral-500 mb-8">
-          Intelligence
-        </p>
-
-        <div className="grid md:grid-cols-3 gap-6">
-
-          <Link
-            href="/workspace/building-intelligence"
-            className="border border-black/10 rounded-2xl p-6 bg-white/30 hover:bg-white/50 transition"
-          >
-            <h3 className="text-2xl font-semibold">
-              Asset Intelligence
-            </h3>
-
-            <p className="mt-3 text-neutral-600">
-              Assets, buildings and real-world investment analysis.
-            </p>
-          </Link>
-
-          <Link
-            href="/workspace/business-intelligence"
-            className="border border-black/10 rounded-2xl p-6 bg-white/30 hover:bg-white/50 transition"
-          >
-            <h3 className="text-2xl font-semibold">
-              Business Intelligence
-            </h3>
-
-            <p className="mt-3 text-neutral-600">
-              Business models, operations and implementation.
-            </p>
-          </Link>
-
-          <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
-
-            <h3 className="text-2xl font-semibold">
-              AI Readiness
-            </h3>
-
-            <p className="mt-3 text-neutral-600">
-              AI adoption and automation opportunities.
-            </p>
-
-            <p className="mt-4 text-sm text-neutral-500">
-              Coming Soon
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
-
       {/* Active Projects */}
       <section className="max-w-5xl mx-auto px-6 py-12">
 
@@ -154,6 +95,65 @@ export default function WorkspacePage() {
         </div>
 
       </section>
+
+       {/* Intelligence */}
+       <section className="max-w-5xl mx-auto px-6 py-12">
+
+<h2 className="text-3xl font-bold mb-2">
+  인텔리전스
+</h2>
+
+<p className="text-neutral-500 mb-8">
+  Intelligence
+</p>
+
+<div className="grid md:grid-cols-3 gap-6">
+
+  <Link
+    href="/workspace/building-intelligence"
+    className="border border-black/10 rounded-2xl p-6 bg-white/30 hover:bg-white/50 transition"
+  >
+    <h3 className="text-2xl font-semibold">
+      Asset Intelligence
+    </h3>
+
+    <p className="mt-3 text-neutral-600">
+      Assets, buildings and real-world investment analysis.
+    </p>
+  </Link>
+
+  <Link
+    href="/workspace/business-intelligence"
+    className="border border-black/10 rounded-2xl p-6 bg-white/30 hover:bg-white/50 transition"
+  >
+    <h3 className="text-2xl font-semibold">
+      Business Intelligence
+    </h3>
+
+    <p className="mt-3 text-neutral-600">
+      Business models, operations and implementation.
+    </p>
+  </Link>
+
+  <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
+
+    <h3 className="text-2xl font-semibold">
+      AI Readiness
+    </h3>
+
+    <p className="mt-3 text-neutral-600">
+      AI adoption and automation opportunities.
+    </p>
+
+    <p className="mt-4 text-sm text-neutral-500">
+      Coming Soon
+    </p>
+
+  </div>
+
+</div>
+
+</section>
 
     </main>
   );
