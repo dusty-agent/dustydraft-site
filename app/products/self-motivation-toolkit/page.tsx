@@ -48,7 +48,7 @@ export default function SelfMotivationToolkitPage() {
     <main className="min-h-screen bg-[#ede4da] text-neutral-900">
 
       {/* Hero */}
-      <section className="max-w-5xl mx-auto px-6 py-20">
+      <section className="max-w-5xl mx-auto px-6 py-8 md:py-10">
 
         <h1 className="text-5xl font-bold">
           Self Motivation Toolkit
@@ -91,7 +91,7 @@ export default function SelfMotivationToolkitPage() {
       </section>
 
       {/* About */}
-      <section className="max-w-5xl mx-auto px-6 py-16">
+      <section className="max-w-5xl mx-auto px-6 pt-10 pb-16">
 
         <h2 className="text-3xl font-bold mb-8">
           About

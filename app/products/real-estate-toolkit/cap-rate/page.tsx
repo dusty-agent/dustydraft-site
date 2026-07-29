@@ -19,7 +19,7 @@ export default function CapRateCalculatorPage() {
   return (
     <main className="min-h-screen bg-[#ede4da] text-neutral-900">
       {/* Hero */}
-      <section className="max-w-4xl mx-auto px-6 py-20">
+      <section className="max-w-5xl mx-auto px-6 py-8 md:py-10">
       <h1 className="text-5xl font-bold">
           자본환원율 계산기
         </h1>

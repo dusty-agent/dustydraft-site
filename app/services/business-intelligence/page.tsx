@@ -3,7 +3,7 @@ export default function BusinessIntelligencePage() {
       <main className="min-h-screen bg-[#ede4da] text-neutral-900">
   
         {/* Hero */}
-        <section className="max-w-5xl mx-auto px-6 py-20">
+        <section className="max-w-5xl mx-auto px-6 py-8 md:py-10">
   
         <h1 className="text-5xl font-bold">
           비즈니스 인텔리전스
@@ -142,7 +142,7 @@ export default function BusinessIntelligencePage() {
         </section>
   
         {/* Outcomes */}
-        <section className="max-w-5xl mx-auto px-6 py-16">
+        <section className="max-w-5xl mx-auto px-6 pt-10 pb-16">
   
         <h2 className="text-3xl font-bold mb-2">
           결과물

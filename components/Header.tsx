@@ -24,6 +24,14 @@ export default function Header() {
           <Link href="/insights">인사이트</Link>
 
           <Link 
+            href="/services"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            서비스
+          </Link>
+          
+          <Link 
             href="/workspace/real-estate-toolkit/investment-analysis"
             target="_blank"
             rel="noopener noreferrer"

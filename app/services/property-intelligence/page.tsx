@@ -1,26 +1,25 @@
-export default function AIReadinessPage() {
+export default function PropertyIntelligencePage() {
   return (
     <main className="min-h-screen bg-[#ede4da] text-neutral-900">
 
       {/* Hero */}
       <section className="max-w-5xl mx-auto px-6 py-8 md:py-10">
         <h1 className="text-5xl font-bold">
-          AI 준비도
+          프로퍼티 인텔리전스
         </h1>
 
         <p className="mt-4 text-xl text-neutral-500">
-          AI Readiness
+          Property Intelligence
         </p>
 
         <p className="mt-8 text-lg text-neutral-800 max-w-3xl leading-relaxed">
-          데이터, 업무 흐름 및 기존 시스템을 진단하여
-          실질적인 AI 적용 가능성과 구현 방향을 분석합니다.
+          부동산 관련 정보와 근거를 연결하고 검증하여
+          더 나은 판단과 실행을 지원합니다.
         </p>
 
         <p className="mt-6 text-lg text-neutral-700 max-w-3xl leading-relaxed">
-          AI 도입은 단순히 모델을 선택하는 것에서 끝나지 않습니다.
-          활용 가능한 데이터, 구조화된 지식, 검증 기준과
-          실제 업무에 연결할 수 있는 시스템이 필요합니다.
+          부동산은 단순한 투자대상이 아니라 물리적 공간이자
+          권리와 이용관계가 결합된 운영·관리·거래의 대상입니다.
         </p>
       </section>
 
@@ -36,13 +35,13 @@ export default function AIReadinessPage() {
 
         <div className="border border-black/10 rounded-2xl p-8 bg-white/30">
           <p className="text-lg text-neutral-700 leading-relaxed">
-            AI 적용의 출발점은 현재 보유한 데이터와 업무 구조를
-            정확히 이해하는 것입니다.
+            부동산에 관한 판단은 하나의 문서나 하나의 수치만으로
+            이루어지기 어렵습니다.
           </p>
 
           <p className="mt-4 text-lg text-neutral-700 leading-relaxed">
-            기술 도입 자체보다 실제로 해결해야 할 문제와
-            측정 가능한 성과 기준을 우선적으로 검토합니다.
+            자산의 상태, 이용 목적, 권리관계, 주변 환경,
+            자료의 신뢰도와 복수의 대안을 함께 검토합니다.
           </p>
         </div>
       </section>
@@ -61,85 +60,156 @@ export default function AIReadinessPage() {
 
           <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
             <h3 className="text-xl font-semibold">
-              데이터
+              자산 상태
             </h3>
 
             <p className="mt-2 text-neutral-500">
-              Data
+              Property Conditions
             </p>
 
             <p className="mt-4 text-neutral-700">
-              데이터의 품질, 구조, 접근성 및 재활용 가능성.
+              물리적 특성, 구조, 시설 및 현재 이용 상태.
             </p>
           </div>
 
           <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
             <h3 className="text-xl font-semibold">
-              업무 흐름
+              이용 가능성
             </h3>
 
             <p className="mt-2 text-neutral-500">
-              Workflows
+              Usability
             </p>
 
             <p className="mt-4 text-neutral-700">
-              반복 업무, 의사결정 과정 및 자동화 가능 영역.
+              희망 용도, 공간 적합성 및 실제 활용 가능성.
             </p>
           </div>
 
           <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
             <h3 className="text-xl font-semibold">
-              지식 구조
+              권리와 거래
             </h3>
 
             <p className="mt-2 text-neutral-500">
-              Knowledge Structure
+              Rights & Transactions
             </p>
 
             <p className="mt-4 text-neutral-700">
-              지식그래프, 분류체계, 메타데이터 및 정보 간 관계.
+              소유권, 임대차, 계약조건 및 거래 구조.
             </p>
           </div>
 
           <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
             <h3 className="text-xl font-semibold">
-              시스템
+              운영
             </h3>
 
             <p className="mt-2 text-neutral-500">
-              Systems
+              Operations
             </p>
 
             <p className="mt-4 text-neutral-700">
-              기존 인프라, 외부 연계 구조 및 배포 제약요인.
+              관리 조건, 운영비용 및 지속적인 운영 요구사항.
             </p>
           </div>
 
           <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
             <h3 className="text-xl font-semibold">
-              평가
+              입지와 환경
             </h3>
 
             <p className="mt-2 text-neutral-500">
-              Evaluation
+              Location & Context
             </p>
 
             <p className="mt-4 text-neutral-700">
-              벤치마크, 검증 데이터셋 및 성능 측정 기준.
+              접근성, 배후수요, 경쟁시설 및 주변 환경.
             </p>
           </div>
 
           <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
             <h3 className="text-xl font-semibold">
-              구현 가능성
+              문서와 데이터
             </h3>
 
             <p className="mt-2 text-neutral-500">
-              Implementation
+              Documents & Data
             </p>
 
             <p className="mt-4 text-neutral-700">
-              프로토타입 범위, PoC 설계 및 실행 우선순위.
+              자료의 출처, 최신성, 누락 여부 및 정보 간 정합성.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Analysis Process */}
+      <section className="max-w-5xl mx-auto px-6 py-12">
+        <h2 className="text-3xl font-bold mb-2">
+          분석 과정
+        </h2>
+
+        <p className="text-neutral-500 mb-8">
+          Analysis Process
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-6">
+
+          <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
+            <h3 className="text-xl font-semibold">
+              연관 질문 확장
+            </h3>
+
+            <p className="mt-2 text-neutral-500">
+              Question Expansion
+            </p>
+
+            <p className="mt-4 text-neutral-700">
+              사용자의 원질문에서 필요한 연관 검토사항을 확장합니다.
+            </p>
+          </div>
+
+          <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
+            <h3 className="text-xl font-semibold">
+              근거 검증
+            </h3>
+
+            <p className="mt-2 text-neutral-500">
+              Evidence Validation
+            </p>
+
+            <p className="mt-4 text-neutral-700">
+              문서와 데이터의 일치, 충돌 및 누락 여부를 확인합니다.
+            </p>
+          </div>
+
+          <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
+            <h3 className="text-xl font-semibold">
+              비교 분석
+            </h3>
+
+            <p className="mt-2 text-neutral-500">
+              Comparative Analysis
+            </p>
+
+            <p className="mt-4 text-neutral-700">
+              자산, 문서, 이용 시나리오 및 시점별 차이를 비교합니다.
+            </p>
+          </div>
+
+          <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
+            <h3 className="text-xl font-semibold">
+              의사결정 지원
+            </h3>
+
+            <p className="mt-2 text-neutral-500">
+              Decision Support
+            </p>
+
+            <p className="mt-4 text-neutral-700">
+              확인된 사실과 불확실성, 다음 실행사항을 함께 제시합니다.
             </p>
           </div>
 
@@ -158,70 +228,14 @@ export default function AIReadinessPage() {
 
         <div className="border border-black/10 rounded-2xl p-8 bg-white/30">
           <p className="text-lg text-neutral-700 leading-relaxed">
-            모든 업무에 AI가 필요한 것은 아니며,
-            모든 데이터가 즉시 모델 개발에 활용될 수 있는 것도 아닙니다.
+            부동산에 관한 하나의 질문도 복수의 문서와 데이터,
+            서로 다른 분석 기준을 필요로 할 수 있습니다.
           </p>
 
           <p className="mt-4 text-lg text-neutral-700 leading-relaxed">
-            데이터셋 검토, 지식그래프 설계, 검색 성능 테스트,
-            평가 데이터 구축, 프로토타입 개발 및 업무 기반 성능 측정을 통해
-            적용 가설을 검증합니다.
+            확인된 정보, 부분 확인 정보, 충돌 정보,
+            누락 정보 및 외부 확인이 필요한 사항을 구분합니다.
           </p>
-        </div>
-      </section>
-
-      {/* Applied Work */}
-      <section className="max-w-5xl mx-auto px-6 py-12">
-        <h2 className="text-3xl font-bold mb-2">
-          적용 업무
-        </h2>
-
-        <p className="text-neutral-500 mb-8">
-          Applied Work
-        </p>
-
-        <div className="grid md:grid-cols-2 gap-6">
-
-          <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
-            <h3 className="text-xl font-semibold">
-              지식그래프 설계 및 구축
-            </h3>
-
-            <p className="mt-2 text-neutral-500">
-              Knowledge Graph Design
-            </p>
-          </div>
-
-          <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
-            <h3 className="text-xl font-semibold">
-              RAG 및 문서 검색 구조
-            </h3>
-
-            <p className="mt-2 text-neutral-500">
-              RAG & Document Retrieval
-            </p>
-          </div>
-
-          <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
-            <h3 className="text-xl font-semibold">
-              AI 평가 데이터셋 구축
-            </h3>
-
-            <p className="mt-2 text-neutral-500">
-              AI Evaluation Datasets
-            </p>
-          </div>
-
-          <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
-            <h3 className="text-xl font-semibold">
-              업무 자동화 및 프로토타입 개발
-            </h3>
-
-            <p className="mt-2 text-neutral-500">
-              Automation & Prototyping
-            </p>
-          </div>
-
         </div>
       </section>
 
@@ -239,31 +253,41 @@ export default function AIReadinessPage() {
 
           <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
             <h3 className="text-xl font-semibold">
-              AI 준비도 진단
+              자산 진단
             </h3>
 
             <p className="mt-2 text-neutral-500">
-              AI Readiness Assessment
+              Property Assessment
             </p>
           </div>
 
           <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
             <h3 className="text-xl font-semibold">
-              데이터·지식 아키텍처
+              근거 검증
             </h3>
 
             <p className="mt-2 text-neutral-500">
-              Data & Knowledge Architecture
+              Evidence Validation
             </p>
           </div>
 
           <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
             <h3 className="text-xl font-semibold">
-              프로토타입 및 PoC 계획
+              비교 분석
             </h3>
 
             <p className="mt-2 text-neutral-500">
-              Prototype & PoC Plans
+              Comparative Analysis
+            </p>
+          </div>
+
+          <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
+            <h3 className="text-xl font-semibold">
+              이용·운영 시나리오
+            </h3>
+
+            <p className="mt-2 text-neutral-500">
+              Use & Operating Scenarios
             </p>
           </div>
 
@@ -273,7 +297,17 @@ export default function AIReadinessPage() {
             </h3>
 
             <p className="mt-2 text-neutral-500">
-              Implementation Roadmaps
+              Action Roadmaps
+            </p>
+          </div>
+
+          <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
+            <h3 className="text-xl font-semibold">
+              의사결정 지원
+            </h3>
+
+            <p className="mt-2 text-neutral-500">
+              Decision Support
             </p>
           </div>
 
