@@ -4,8 +4,6 @@ import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-import { Analytics } from "@vercel/analytics/next";
-
 export const metadata: Metadata = {
   title: "DUSTY DRAFT",
   description:
@@ -41,7 +39,6 @@ export default function RootLayout({
 
         <main className="flex-1">
           {children}
-          <Analytics />
         </main>
 
         <Footer />
