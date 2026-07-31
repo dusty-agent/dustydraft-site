@@ -72,7 +72,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-neutral-300 hover:text-white transition"
             >
-              Rala's Tech Notes →
+              Rala&apos;s Tech Notes →
             </a>
 
           </div>

@@ -114,8 +114,8 @@ export default function TermsPage() {
           </h2>
 
           <p>
-            본 약관은 드래프트(draft)(이하 "회사")가 운영하는
-            DUSTYDRAFT® 웹사이트(이하 "서비스")에서 제공하는
+            본 약관은 드래프트(draft)(이하 &quot;회사&quot;)가 운영하는
+            DUSTYDRAFT® 웹사이트(이하 &quot;서비스&quot;)에서 제공하는
             소프트웨어, 오픈소스 프로젝트, 개발 도구,
             데이터셋, 문서 및 기타 서비스의 이용과 관련하여
             회사와 이용자의 권리, 의무 및 책임사항을
@@ -476,7 +476,7 @@ export default function TermsPage() {
 <p className="mt-3">
   회사는 오픈소스 프로젝트, 연구자료,
   데이터셋 및 기타 콘텐츠를
-  "있는 그대로(AS IS)" 제공하며,
+  &quot;있는 그대로(AS IS)&quot; 제공하며,
   특정 목적에 대한 적합성이나
   완전성을 보증하지 않습니다.
 </p>
@@ -491,7 +491,7 @@ export default function TermsPage() {
 <p className="mt-4 italic text-[#8A7A72]">
   The Service, including software,
   datasets and documentation,
-  is provided "AS IS" without
+  is provided &quot;AS IS&quot; without
   warranties of any kind.
 </p>
 

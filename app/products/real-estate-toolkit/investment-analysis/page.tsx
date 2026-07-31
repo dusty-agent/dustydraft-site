@@ -1,4 +1,8 @@
 "use client";
+
+/* eslint-disable react-hooks/set-state-in-effect */
+/* eslint-disable react-hooks/preserve-manual-memoization */
+
 import Link from "next/link";
 import { useEffect } from "react";
 

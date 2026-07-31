@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function AssistPage() {
   return (
     <main className="min-h-screen bg-[#ede4da] text-neutral-900">

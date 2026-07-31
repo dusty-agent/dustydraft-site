@@ -111,7 +111,7 @@ import Link from "next/link";
           </h2>
 
           <p>
-            드래프트(draft)(이하 "회사")는
+            드래프트(draft)(이하 &quot;회사&quot;)는
             DUSTYDRAFT® 서비스 이용자의
             개인정보를 중요하게 생각하며,
             「개인정보 보호법」 등

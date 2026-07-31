@@ -87,7 +87,7 @@ className="border border-black/10 rounded-2xl p-6 bg-white/30 block hover:bg-whi
 <div className="border border-black/10 rounded-2xl p-6 bg-white/30">
 
 <span className="text-2xl font-semibold">
-  Rala's Tech Notes
+  Rala&apos;s Tech Notes
 </span>
 
 <p className="mt-3 text-neutral-600">

@@ -24,7 +24,7 @@ export default function StudioPage() {
   
             <div className="border rounded-2xl p-6">
               <h3 className="font-semibold text-xl">
-                Rala's Tech Notes
+                Rala&apos;s Tech Notes
               </h3>
   
               <p className="mt-2 text-neutral-600">
