@@ -304,7 +304,7 @@ export default function AssetPickerPage() {
                     >
           
                       <img
-                        src="/images/assetpicker-channel.jpg"
+                        src="/images/assetpicker-channel.png"
                         alt="AssetPicker Shorts Playlist"
                         className="
                           block
