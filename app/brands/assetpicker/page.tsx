@@ -570,22 +570,22 @@ export default function AssetPickerPage() {
 
         links={[
           {
-            label: "오늘의 부동산 뉴스",
-            href: "https://www.dustie.xyz/discover/news",
+            label: "Ask Dustie by Dustie(ALPHA)",
+            href: "https://www.dustie.xyz/ai/askdustie",
             external: true,
           },
           {
-            label: "AssetPicker Shorts",
+            label: "AssetPicker Daily Shorts | 오늘의 부동산 이슈",
             href: "https://www.youtube.com/watch?v=whJIpoeX2_4&list=PLNh6kloQi2EM",
             external: true,
           },
           {
-            label: "MarketReader — 오늘의 환율·금리",
+            label: "MarketReader | 오늘의 환율·금리",
             href: "https://www.youtube.com/watch?v=Uq7AFetm25Y&list=PLTH7LilYdu_I",
             external: true,
           },
           {
-            label: "AP Daily 오픈채팅",
+            label: "카카오톡 오픈채팅",
             href: "https://open.kakao.com/o/giaqO4Ii",
             external: true,
           },
