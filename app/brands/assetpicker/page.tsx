@@ -11,11 +11,14 @@ export default function AssetPickerPage() {
             relative
             mx-auto
             max-w-6xl
-            aspect-video
+            min-h-[560px]
             overflow-hidden
-            rounded-[30px]
+            rounded-[28px]
             bg-cover
             bg-center
+            md:min-h-0
+            md:aspect-video
+            md:rounded-[30px]
           "
           style={{
             backgroundImage: "url('/images/assetpicker-cover.png')",
@@ -26,9 +29,11 @@ export default function AssetPickerPage() {
           <div
             className="
               relative z-10
-              flex h-full
+              flex min-h-[560px]
               flex-col justify-between
-              p-8
+              p-6
+              md:min-h-0
+              md:h-full
               md:p-14
             "
           >
@@ -41,8 +46,7 @@ export default function AssetPickerPage() {
 
               <div
                 className="
-                    flex
-                    flex-wrap
+                    hidden
                     items-center
                     justify-end
                     gap-2
@@ -50,7 +54,8 @@ export default function AssetPickerPage() {
                     uppercase
                     tracking-[0.16em]
                     text-white/40
-                "
+                    sm:flex
+                  "
                 >
                 <span>Active</span>
                 <span className="text-white/20">·</span>
