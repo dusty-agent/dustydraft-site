@@ -151,6 +151,14 @@ export default function Header() {
                 About Draft
               </Link>
 
+              <Link
+                href="/support"
+                onClick={closeMenu}
+                className="block px-3 py-2.5 rounded-lg hover:bg-neutral-100 transition"
+              >
+                Support
+              </Link>
+
             </div>
           </div>
         </>

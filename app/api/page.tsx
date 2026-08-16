@@ -2,13 +2,13 @@ import Link from "next/link";
 
 const apiItems = [
   {
-    name: "Korea Provenance API",
+    name: "Asset Provenance API (South Korea)",
     type: "Asset · History · Public Record · Provenance",
     description:
       "개별 자산에 흩어진 공개 기록과 출처를 시간의 흐름에 따라 구조화하여 확인하고 활용할 수 있도록 제공합니다.",
     status: "Beta",
-    href: "https://your_api_url/",
-    docsHref: "https://your_docs_url/",
+    href: "https://provenance.open.dustydraft.com/api",
+    docsHref: "https://provenance.open.dustydraft.com/api/docs",
   },
   {
     name: "AssetPicker Data API",
@@ -91,14 +91,11 @@ const flow = [
 export default function ApiPage() {
   return (
     <main className="min-h-screen bg-dd-black text-dd-white">
-
       {/* ==================================================
           HERO
       ================================================== */}
       <section className="mx-auto max-w-6xl px-6 pb-20 pt-20 md:px-10 md:pb-28 md:pt-28">
-
         <div className="max-w-4xl">
-
           <p className="mb-4 text-sm uppercase tracking-[0.22em] text-white/40">
             DustyDraft / Public API
           </p>
@@ -116,30 +113,23 @@ export default function ApiPage() {
           </p>
 
           <p className="mt-6 max-w-2xl text-base leading-7 text-white/40">
-            Korea Provenance API는 자산의 소유 포트폴리오를 관리하거나
+            Asset Provenance API는 자산의 소유 포트폴리오를 관리하거나
             개인의 자산 규모를 분석하는 서비스가 아닙니다.
             하나의 자산을 중심으로 확인 가능한 공개 기록과 출처를 연결하고,
             그 자산이 어떤 정보와 변화를 거쳐왔는지 살펴보기 위한
             데이터 인터페이스입니다.
           </p>
-
         </div>
-
       </section>
-
 
       {/* ==================================================
           FEATURED API / VISUAL
       ================================================== */}
       <section className="border-y border-white/10 bg-white/[0.02]">
-
         <div className="mx-auto max-w-6xl px-6 py-20 md:px-10 md:py-28">
-
           <div className="grid gap-14 md:grid-cols-12 md:items-center">
-
             {/* Visual */}
             <div className="md:col-span-5">
-
               <div
                 className="
                   relative
@@ -152,7 +142,6 @@ export default function ApiPage() {
                   p-7
                 "
               >
-
                 <p className="text-[10px] uppercase tracking-[0.24em] text-white/30">
                   Asset Provenance
                 </p>
@@ -161,10 +150,8 @@ export default function ApiPage() {
                   One Asset
                 </p>
 
-
                 {/* Timeline */}
                 <div className="relative mt-14 pl-8">
-
                   <div className="absolute bottom-2 left-[6px] top-2 w-px bg-white/10" />
 
                   {[
@@ -176,7 +163,6 @@ export default function ApiPage() {
                       key={time}
                       className={index === 2 ? "relative" : "relative pb-16"}
                     >
-
                       <span
                         className="
                           absolute
@@ -202,15 +188,11 @@ export default function ApiPage() {
                       <p className="mt-2 text-xs text-white/30">
                         {source}
                       </p>
-
                     </div>
                   ))}
-
                 </div>
 
-
                 <div className="absolute bottom-7 left-7 right-7 border-t border-white/10 pt-5">
-
                   <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.18em] text-white/25">
                     <span>Asset</span>
                     <span>→</span>
@@ -220,24 +202,23 @@ export default function ApiPage() {
                     <span>→</span>
                     <span>Source</span>
                   </div>
-
                 </div>
-
               </div>
-
             </div>
-
 
             {/* Copy */}
             <div className="md:col-span-7">
-
               <p className="text-sm uppercase tracking-[0.22em] text-emerald-300/60">
                 Featured / Beta
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold tracking-[-0.035em] md:text-5xl">
-                Korea Provenance API
+                Asset Provenance API
               </h2>
+
+              <p className="mt-3 text-sm uppercase tracking-[0.18em] text-white/35">
+                South Korea
+              </p>
 
               <p className="mt-6 max-w-2xl text-xl leading-relaxed text-white/70">
                 현재 상태만이 아니라,
@@ -252,9 +233,7 @@ export default function ApiPage() {
                 일관된 방식으로 활용할 수 있도록 만드는 것이 목표입니다.
               </p>
 
-
               <div className="mt-9 flex flex-wrap gap-3">
-
                 <Link
                   href="/api/get-started"
                   className="
@@ -272,7 +251,7 @@ export default function ApiPage() {
                 </Link>
 
                 <a
-                  href="https://your_docs_url/"
+                  href="https://provenance.open.dustydraft.com/api/docs"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="
@@ -288,23 +267,16 @@ export default function ApiPage() {
                 >
                   Documentation ↗
                 </a>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
-
       </section>
-
 
       {/* ==================================================
           WHAT IT IS / IS NOT
       ================================================== */}
       <section className="mx-auto max-w-6xl px-6 py-20 md:px-10 md:py-28">
-
         <p className="text-sm uppercase tracking-[0.2em] text-white/35">
           Scope
         </p>
@@ -315,12 +287,9 @@ export default function ApiPage() {
           무엇을 보지 않는가.
         </h2>
 
-
         <div className="mt-12 grid gap-5 md:grid-cols-2">
-
           {/* We focus on */}
           <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 md:p-9">
-
             <p className="text-xs uppercase tracking-[0.18em] text-emerald-300/55">
               We Focus On
             </p>
@@ -330,20 +299,15 @@ export default function ApiPage() {
             </h3>
 
             <div className="mt-7 space-y-4 text-sm leading-7 text-white/50">
-
               <p>· 하나의 자산을 중심으로 한 공개 기록</p>
               <p>· 시간에 따른 정보와 상태의 변화</p>
               <p>· 기록별 원본 출처와 참조 관계</p>
               <p>· 애플리케이션에서 활용할 수 있는 구조화된 응답</p>
-
             </div>
-
           </div>
-
 
           {/* Not */}
           <div className="rounded-3xl border border-white/10 p-7 md:p-9">
-
             <p className="text-xs uppercase tracking-[0.18em] text-white/25">
               Not Designed For
             </p>
@@ -353,28 +317,20 @@ export default function ApiPage() {
             </h3>
 
             <div className="mt-7 space-y-4 text-sm leading-7 text-white/35">
-
               <p>· 특정인의 전체 부동산 보유 현황 관리</p>
               <p>· 임대인·임차인 계약 또는 임대료 관리</p>
               <p>· 개인별 자산 포트폴리오 계산</p>
               <p>· 총자산 또는 순자산 관리</p>
-
             </div>
-
           </div>
-
         </div>
-
       </section>
-
 
       {/* ==================================================
           WHAT YOU GET
       ================================================== */}
       <section className="border-y border-white/10 bg-white/[0.02]">
-
         <div className="mx-auto max-w-6xl px-6 py-20 md:px-10 md:py-28">
-
           <p className="text-sm uppercase tracking-[0.2em] text-white/35">
             What You Get
           </p>
@@ -385,21 +341,17 @@ export default function ApiPage() {
             기록과 출처를 연결합니다.
           </h2>
 
-
           <div className="mt-12 grid border-l border-t border-white/10 md:grid-cols-4">
-
             {benefits.map((item) => (
               <article
                 key={item.number}
                 className="min-h-72 border-b border-r border-white/10 p-6"
               >
-
                 <p className="text-sm text-white/20">
                   {item.number}
                 </p>
 
                 <div className="mt-14">
-
                   <p className="text-xs text-white/30">
                     {item.korean}
                   </p>
@@ -411,24 +363,17 @@ export default function ApiPage() {
                   <p className="mt-5 text-sm leading-6 text-white/45">
                     {item.description}
                   </p>
-
                 </div>
-
               </article>
             ))}
-
           </div>
-
         </div>
-
       </section>
-
 
       {/* ==================================================
           DATA FLOW
       ================================================== */}
       <section className="mx-auto max-w-6xl px-6 py-20 md:px-10 md:py-28">
-
         <p className="text-sm uppercase tracking-[0.2em] text-white/35">
           Provenance Flow
         </p>
@@ -439,21 +384,17 @@ export default function ApiPage() {
           기록의 흐름으로.
         </h2>
 
-
         <div className="mt-12 grid border-l border-t border-white/10 sm:grid-cols-2 md:grid-cols-4">
-
           {flow.map((item) => (
             <article
               key={item.number}
               className="min-h-64 border-b border-r border-white/10 p-6"
             >
-
               <p className="text-sm text-white/20">
                 {item.number}
               </p>
 
               <div className="mt-14">
-
                 <p className="text-sm text-white/30">
                   {item.korean}
                 </p>
@@ -465,28 +406,19 @@ export default function ApiPage() {
                 <p className="mt-5 text-sm leading-6 text-white/45">
                   {item.description}
                 </p>
-
               </div>
-
             </article>
           ))}
-
         </div>
-
       </section>
-
 
       {/* ==================================================
           EXAMPLE RESPONSE
       ================================================== */}
       <section className="border-y border-white/10 bg-white/[0.02]">
-
         <div className="mx-auto max-w-6xl px-6 py-20 md:px-10 md:py-24">
-
           <div className="grid gap-12 md:grid-cols-12">
-
             <div className="md:col-span-5">
-
               <p className="text-sm uppercase tracking-[0.2em] text-white/35">
                 Example Structure
               </p>
@@ -503,14 +435,10 @@ export default function ApiPage() {
                 아래 예시는 API의 방향을 설명하기 위한 구조 예시입니다.
                 실제 응답 필드는 엔드포인트와 제공 데이터에 따라 달라질 수 있습니다.
               </p>
-
             </div>
 
-
             <div className="md:col-span-7">
-
               <div className="overflow-x-auto rounded-2xl border border-white/10 bg-black p-6">
-
                 <p className="mb-5 text-xs uppercase tracking-[0.18em] text-white/25">
                   JSON
                 </p>
@@ -533,23 +461,16 @@ export default function ApiPage() {
   ]
 }`}
                 </pre>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
-
       </section>
-
 
       {/* ==================================================
           AVAILABLE APIs
       ================================================== */}
       <section className="mx-auto max-w-6xl px-6 py-20 md:px-10 md:py-28">
-
         <p className="text-sm uppercase tracking-[0.2em] text-white/35">
           APIs
         </p>
@@ -558,11 +479,8 @@ export default function ApiPage() {
           공개 및 개발 중인 API
         </h2>
 
-
         <div className="mt-10 grid gap-5">
-
           {apiItems.map((item, index) => (
-
             <article
               key={item.name}
               className="
@@ -577,19 +495,14 @@ export default function ApiPage() {
                 md:p-9
               "
             >
-
               <div className="flex flex-col gap-7 md:flex-row md:items-start md:justify-between">
-
                 <div className="flex max-w-3xl gap-6">
-
                   <span className="pt-1 text-sm text-white/25">
                     {String(index + 1).padStart(2, "0")}
                   </span>
 
                   <div>
-
                     <div className="flex flex-wrap items-center gap-3">
-
                       <h3 className="text-2xl font-medium tracking-tight">
                         {item.name}
                       </h3>
@@ -603,7 +516,6 @@ export default function ApiPage() {
                       >
                         {item.status}
                       </span>
-
                     </div>
 
                     <p className="mt-2 text-xs uppercase tracking-[0.16em] text-white/30">
@@ -613,14 +525,10 @@ export default function ApiPage() {
                     <p className="mt-4 max-w-2xl leading-7 text-white/50">
                       {item.description}
                     </p>
-
                   </div>
-
                 </div>
 
-
                 <div className="flex shrink-0 gap-3 md:pl-6">
-
                   {item.docsHref !== "#" && (
                     <a
                       href={item.docsHref}
@@ -642,34 +550,24 @@ export default function ApiPage() {
                       API 열기 ↗
                     </a>
                   )}
-
                 </div>
-
               </div>
-
             </article>
           ))}
-
         </div>
-
       </section>
-
 
       {/* ==================================================
           GET STARTED
       ================================================== */}
       <section className="border-t border-white/10">
-
         <div className="mx-auto max-w-6xl px-6 py-20 md:px-10 md:py-28">
-
           <p className="text-sm uppercase tracking-[0.2em] text-white/35">
             Get Started
           </p>
 
           <div className="mt-5 grid gap-12 md:grid-cols-12">
-
             <div className="md:col-span-5">
-
               <h2 className="text-4xl font-semibold tracking-tight md:text-5xl">
                 필요한 자산을
                 <br />
@@ -677,55 +575,44 @@ export default function ApiPage() {
               </h2>
 
               <p className="mt-6 max-w-md leading-7 text-white/50">
-                API Key를 발급받고 문서를 확인한 뒤,
-                간단한 요청으로 첫 응답을 확인할 수 있도록 준비하고 있습니다.
+                현재 공개된 Beta API는 별도의 API Key 없이
+                문서와 엔드포인트를 바로 확인할 수 있습니다.
               </p>
 
-
               <div className="mt-8 flex flex-wrap gap-3">
-
                 <Link
                   href="/api/get-started"
                   className="rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition hover:bg-white/85"
                 >
-                  API Key 발급 →
+                  Get Started →
                 </Link>
 
                 <a
-                  href="https://your_docs_url/"
+                  href="https://provenance.open.dustydraft.com/api/docs"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-full border border-white/15 px-6 py-3 text-sm text-white/70 transition hover:bg-white/10"
                 >
                   Documentation ↗
                 </a>
-
               </div>
-
             </div>
 
-
             <div className="md:col-span-7">
-
               <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-
                 <p className="text-xs uppercase tracking-[0.18em] text-white/30">
                   First Request
                 </p>
 
                 <pre className="mt-5 overflow-x-auto text-sm leading-7 text-white/70">
-{`curl "https://your_api_url/v1/..." \\
-  -H "X-API-Key: YOUR_API_KEY"`}
+{`curl "https://provenance.open.dustydraft.com/api/v1/parcels/parcel-demo-001/lineage"`}
                 </pre>
-
               </div>
 
-
               <div className="mt-6 grid gap-3 sm:grid-cols-3">
-
                 {[
-                  ["01", "이메일 입력"],
-                  ["02", "API Key 받기"],
+                  ["01", "문서 확인"],
+                  ["02", "엔드포인트 선택"],
                   ["03", "첫 요청 보내기"],
                 ].map(([number, text]) => (
                   <div
@@ -741,48 +628,35 @@ export default function ApiPage() {
                     </p>
                   </div>
                 ))}
-
               </div>
-
             </div>
-
           </div>
-
         </div>
-
       </section>
-
 
       {/* ==================================================
           SUPPORT
       ================================================== */}
       <section className="border-t border-white/10">
-
         <div className="mx-auto max-w-6xl px-6 py-16 md:px-10">
-
           <p className="text-xs uppercase tracking-[0.22em] text-white/30">
             Support this project
           </p>
 
           <div className="mt-5 flex flex-col justify-between gap-8 md:flex-row md:items-end">
-
             <div>
-
               <h2 className="text-2xl font-semibold">
                 유용했다면, 작은 응원을 보내주세요.
               </h2>
 
               <p className="mt-4 max-w-xl text-sm leading-7 text-white/45">
-                Korea Provenance API는 공개된 기록을
+                Asset Provenance API는 공개된 기록을
                 더 쉽게 찾고 활용할 수 있도록 만드는 프로젝트입니다.
                 구독과 작은 후원은 서비스 운영과 개선에 도움이 됩니다.
               </p>
-
             </div>
 
-
             <div className="flex flex-wrap gap-3">
-
               <a
                 href="https://www.youtube.com/@assetpicker"
                 target="_blank"
@@ -792,29 +666,21 @@ export default function ApiPage() {
                 AssetPicker 구독 ↗
               </a>
 
-              <a
-                href="#"
+              <Link
+                href="/support"
                 className="rounded-full bg-white px-5 py-3 text-sm font-medium text-black transition hover:bg-white/85"
               >
                 ☕ 커피 한 잔 보내기
-              </a>
-
+              </Link>
             </div>
-
           </div>
-
         </div>
-
       </section>
-
 
       {/* Footer */}
       <div className="mx-auto max-w-6xl px-6 md:px-10">
-
         <div className="border-t border-white/10 py-7">
-
           <div className="flex flex-col justify-between gap-3 text-sm text-white/30 md:flex-row">
-
             <p>
               DustyDraft API
             </p>
@@ -822,13 +688,9 @@ export default function ApiPage() {
             <p>
               Asset · History · Source · Provenance
             </p>
-
           </div>
-
         </div>
-
       </div>
-
     </main>
   );
 }
