@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function InsightsPage() {
   return (
-    <main className="min-h-screen bg-[#ede4da] text-neutral-900">
+    <main className="min-h-screen bg-dd-neutral text-dd-ink">
 
       {/* Hero */}
       <section className="max-w-5xl mx-auto px-6 py-20">

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const areas = [
   {
     number: "01",
@@ -40,7 +42,7 @@ const areas = [
     details: [
       "프로토타입 개발",
       "실사용 기반 검증",
-      "독립 서비스 운영",
+      "브랜드 및 서비스 인큐베이팅",
     ],
   },
 ];
@@ -50,101 +52,84 @@ const process = [
     number: "01",
     title: "Observe",
     korean: "발견",
-    description: "실제 업무와 운영 과정에서 반복되는 문제를 발견합니다.",
+    description:
+      "실제 업무와 운영 과정에서 반복되는 문제와 새로운 가능성을 발견합니다.",
   },
   {
     number: "02",
     title: "Structure",
     korean: "구조화",
-    description: "문제와 데이터, 작업의 흐름을 명확한 구조로 정리합니다.",
+    description:
+      "문제와 데이터, 작업의 흐름을 이해하고 사용할 수 있는 구조로 정리합니다.",
   },
   {
     number: "03",
     title: "Build",
     korean: "개발",
-    description: "아이디어에 머무르지 않고 실제로 작동하는 도구를 만듭니다.",
+    description:
+      "아이디어에 머무르지 않고 실제로 작동하는 도구와 서비스를 만듭니다.",
   },
   {
     number: "04",
     title: "Use & Refine",
     korean: "사용과 개선",
-    description: "직접 사용하고 검증하며 더 나은 형태로 지속해서 개선합니다.",
+    description:
+      "직접 사용하고 운영하며 더 나은 형태로 지속해서 개선합니다.",
   },
 ];
 
-const internalBrands = [
-  {
-    name: "Dustie",
-    description:
-      "AI-assisted workspace for documents, knowledge, research, and professional workflows.",
-    tags: ["AI Workspace", "Knowledge", "Workflow"],
-    href: "https://dustie.xyz",
-    isPublic: true,
-  },
-  {
-    name: "Exotic Ordinary",
-    description:
-      "An independent lifestyle and creative brand exploring design, music, content, and digital experiences.",
-    tags: ["Lifestyle", "Design", "Music", "Content"],
-    href: "https://exoticordinary.com",
-    isPublic: true,
-  },
-  {
-    name: "Private Brand",
-    description:
-      "An internal brand currently under incubation and development.",
-    tags: ["Brand Incubation", "In Development"],
-    href: "",
-    isPublic: false,
-  },
-];
-
-const confidentialProjects = [
+const currentWork = [
   {
     number: "01",
-    title: "Commercial AI Decision Support",
-    type: "System Architecture",
-    status: "In Development",
+    eyebrow: "Brands & Ventures",
+    title: "브랜드와 프로젝트",
+    description:
+      "Dustie, AssetPicker, Exotic Ordinary 등 직접 기획하거나 개발하고 인큐베이팅하는 브랜드와 프로젝트를 소개합니다.",
+    href: "/brands",
+    label: "브랜드 보기",
   },
   {
     number: "02",
-    title: "Knowledge Architecture",
-    type: "Research & System Design",
-    status: "Research",
+    eyebrow: "Workspace",
+    title: "도구와 제품",
+    description:
+      "실제로 만들고 운영하는 제품, 분석 도구와 현재 개발 중인 프로젝트를 한곳에서 확인할 수 있습니다.",
+    href: "/workspace",
+    label: "워크스페이스 보기",
   },
   {
     number: "03",
-    title: "Workflow Automation Platform",
-    type: "Architecture Design",
-    status: "Confidential",
-  },
-  {
-    number: "04",
-    title: "Multimodal Intelligence",
-    type: "Private Research",
-    status: "Prototype",
+    eyebrow: "Public API",
+    title: "데이터와 인터페이스",
+    description:
+      "공개 데이터와 구조화된 데이터를 서비스와 애플리케이션에서 활용할 수 있도록 API 형태로 연결합니다.",
+    href: "/api",
+    label: "API 보기",
   },
 ];
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-[#ede4da] text-neutral-900">
+    <main className="min-h-screen bg-dd-ivory text-dd-ink">
+
       {/* Hero */}
       <section className="mx-auto max-w-6xl px-6 pb-20 pt-12 md:pb-28 md:pt-20">
         <div className="border-t border-black/15 pt-6">
-          <p className="text-sm uppercase tracking-[0.24em] text-neutral-500">
+
+          <p className="text-sm uppercase tracking-[0.24em] text-[#756F68]">
             About DustyDraft
           </p>
 
-          <h1 className="mt-10 max-w-4xl text-4xl font-semibold leading-[1.02] tracking-[-0.04em] sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="mt-10 max-w-5xl text-4xl font-semibold leading-[1.02] tracking-[-0.04em] sm:text-5xl md:text-6xl lg:text-7xl">
             Technology for
             <br />
             Less Repetition.
           </h1>
 
           <div className="mt-12 grid gap-8 border-t border-black/15 pt-8 md:grid-cols-12">
+
             <div className="md:col-span-4">
-              <p className="text-sm uppercase tracking-[0.2em] text-neutral-500">
+              <p className="text-sm uppercase tracking-[0.2em] text-[#756F68]">
                 반복을 줄이는 기술
               </p>
 
@@ -162,21 +147,45 @@ export default function AboutPage() {
                 사람이 판단과 창작에 더 집중할 수 있도록 돕습니다.
               </p>
 
-              <p className="max-w-xl leading-relaxed text-neutral-600">
-                DustyDraft는 AI, 데이터와 웹 기술을 활용해 실제 업무와 콘텐츠
-                제작 과정에서 발견한 비효율을 실용적인 디지털 도구와
-                워크플로우로 전환하는 독립 스튜디오입니다.
+              <p className="max-w-xl leading-relaxed text-[#69635C]">
+                DustyDraft는 AI, 데이터와 웹 기술을 활용해
+                실제 업무와 콘텐츠 제작 과정에서 발견한 문제를
+                실용적인 디지털 도구와 워크플로우로 전환하는
+                독립 기술 스튜디오입니다.
               </p>
             </div>
+
           </div>
         </div>
       </section>
 
-      {/* Philosophy */}
-      <section className="border-y border-black/10 bg-white/20">
+      <section className="mx-auto max-w-6xl px-6 py-12 md:py-20">
+        <div className="overflow-hidden rounded-[28px]">
+          <img
+            src="/images/dustydraft-hero.jpg"
+            alt="DustyDraft"
+            className="
+              w-full
+              h-[320px]
+              md:h-[400px]
+              object-cover
+            "
+          />
+        </div>
+
+        <div className="mt-5 flex justify-between gap-6 text-xs tracking-[0.16em] uppercase text-black/45">
+          <span>DustyDraft®</span>
+          <span>Ideas · Technology · Ventures</span>
+        </div>
+      </section>
+
+
+      {/* Who We Are */}
+      <section className="border-y border-black/10 bg-[#EAE4DC]">
         <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-12 md:py-24">
+
           <div className="md:col-span-4">
-            <p className="text-sm uppercase tracking-[0.22em] text-neutral-500">
+            <p className="text-sm uppercase tracking-[0.22em] text-[#756F68]">
               Who We Are
             </p>
 
@@ -189,30 +198,40 @@ export default function AboutPage() {
             <p className="max-w-3xl text-2xl leading-relaxed tracking-[-0.02em] md:text-4xl md:leading-snug">
               기술을 보여주기 위한 기술보다,
               <br />
-              실제 문제를 줄이고 반복해서 사용할 수 있는 도구를 만듭니다.
+              실제로 쓰이고 다시 사용할 수 있는 것을 만듭니다.
             </p>
 
-            <div className="mt-10 max-w-2xl space-y-5 leading-relaxed text-neutral-600">
+            <div className="mt-10 max-w-2xl space-y-5 leading-relaxed text-[#69635C]">
               <p>
-                우리는 자산, 비즈니스, 데이터와 콘텐츠가 만나는 지점에서
-                반복되는 문제를 발견합니다.
+                자산, 비즈니스, 데이터와 콘텐츠가 만나는 지점에서
+                반복되는 문제와 새로운 가능성을 발견합니다.
               </p>
 
               <p>
-                문제의 흐름을 구조화하고, 작동하는 도구를 만든 뒤 직접
-                사용하며 개선합니다. 기술은 목적이 아니라 더 나은
-                워크플로우를 만들기 위한 수단입니다.
+                문제를 구조화하고 작동하는 도구를 만든 뒤,
+                직접 사용하고 운영하면서 개선합니다.
+                기술은 목적이 아니라 더 나은 작업 방식과 경험을 만들기 위한
+                수단입니다.
+              </p>
+
+              <p>
+                필요하다면 하나의 아이디어를 제품이나 브랜드로 발전시키고,
+                독립적으로 성장할 수 있도록 인큐베이팅합니다.
               </p>
             </div>
           </div>
+
         </div>
       </section>
 
+
       {/* Areas */}
       <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
+
         <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
+
           <div>
-            <p className="text-sm uppercase tracking-[0.22em] text-neutral-500">
+            <p className="text-sm uppercase tracking-[0.22em] text-[#756F68]">
               What We Build
             </p>
 
@@ -221,258 +240,275 @@ export default function AboutPage() {
             </h2>
           </div>
 
-          <p className="mt-6">
-            데이터, 자동화, 콘텐츠 제작을 서로 분리하기보다
-            연결된 작업 흐름으로 설계합니다.
+          <p className="max-w-md leading-relaxed text-[#69635C]">
+            데이터, 자동화와 콘텐츠 제작을
+            서로 분리하기보다 연결된 작업 흐름으로 설계합니다.
           </p>
+
         </div>
 
         <div className="mt-14 grid border-l border-t border-black/10 md:grid-cols-2">
+
           {areas.map((area) => (
             <article
               key={area.title}
-              className="group border-b border-r border-black/10 p-7 transition-colors hover:bg-white/35 md:p-10"
+              className="group border-b border-r border-black/10 p-7 transition-colors hover:bg-white/50 md:p-10"
             >
               <div className="flex items-start justify-between gap-6">
-                <p className="text-sm text-neutral-400">{area.number}</p>
 
-                <span className="text-xl transition-transform duration-300 group-hover:translate-x-1">
+                <p className="text-sm text-[#9B938A]">
+                  {area.number}
+                </p>
+
+                <span className="text-lg text-[#756F68] transition-transform duration-300 group-hover:translate-x-1">
                   ↗
                 </span>
+
               </div>
 
               <h3 className="mt-10 text-2xl font-semibold tracking-[-0.025em] md:text-3xl">
                 {area.title}
               </h3>
 
-              <p className="mt-5 max-w-lg leading-relaxed text-neutral-600">
+              <p className="mt-5 max-w-lg leading-relaxed text-[#69635C]">
                 {area.description}
               </p>
 
-              <ul className="mt-8 space-y-2 border-t border-black/10 pt-5 text-sm text-neutral-500">
+              <ul className="mt-8 space-y-2 border-t border-black/10 pt-5 text-sm text-[#756F68]">
+
                 {area.details.map((detail) => (
-                  <li key={detail} className="flex items-center gap-3">
+                  <li
+                    key={detail}
+                    className="flex items-center gap-3"
+                  >
                     <span className="h-px w-4 bg-black/30" />
                     {detail}
                   </li>
                 ))}
+
               </ul>
             </article>
           ))}
+
         </div>
       </section>
 
-      {/* Process */}
-      <section className="bg-neutral-900 text-[#ede4da]">
+
+      {/* API */}
+      <section className="bg-[#171717] text-[#F4F0EA]">
         <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-          <p className="text-sm uppercase tracking-[0.22em] text-white/45">
+
+          <div className="grid gap-12 md:grid-cols-12 md:items-end">
+
+            <div className="md:col-span-5">
+              <p className="text-sm uppercase tracking-[0.22em] text-white/40">
+                Public API
+              </p>
+
+              <h2 className="mt-4 text-4xl font-semibold leading-tight tracking-[-0.035em] md:text-5xl">
+                데이터를 연결하고,
+                <br />
+                다시 사용할 수 있게.
+              </h2>
+            </div>
+
+            <div className="md:col-span-7">
+
+              <p className="max-w-2xl text-xl leading-relaxed tracking-[-0.015em] text-white/80 md:text-2xl">
+                구조화한 데이터를
+                <br className="hidden md:block" />
+                서비스와 애플리케이션이 활용할 수 있도록 연결합니다.
+              </p>
+
+              <p className="mt-6 max-w-xl leading-relaxed text-white/45">
+                공개 데이터와 구조화된 정보를 활용할 수 있는
+                인터페이스를 만들고, 일부 API를 순차적으로 공개합니다.
+              </p>
+
+            </div>
+          </div>
+
+          <Link
+            href="/api"
+            className="group mt-14 block border-y border-white/15 py-8 transition-colors hover:bg-white/[0.04] md:px-4"
+          >
+            <div className="grid gap-6 md:grid-cols-12 md:items-center">
+
+              <div className="md:col-span-1">
+                <span className="text-sm text-white/30">
+                  01
+                </span>
+              </div>
+
+              <div className="md:col-span-4">
+                <p className="text-xs uppercase tracking-[0.16em] text-white/35">
+                  DustyDraft API
+                </p>
+
+                <h3 className="mt-2 text-2xl font-semibold tracking-[-0.025em] md:text-3xl">
+                  Public APIs
+                </h3>
+              </div>
+
+              <div className="md:col-span-5">
+                <p className="max-w-lg leading-relaxed text-white/50">
+                  데이터 출처와 분류,
+                  부동산 및 시장 데이터를 활용할 수 있는
+                  API를 순차적으로 공개합니다.
+                </p>
+
+                <div className="mt-4 flex flex-wrap gap-3">
+
+                  {["Data", "Real Estate", "Open API"].map((tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-full border border-white/15 px-3 py-1.5 text-xs text-white/45"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+
+                </div>
+              </div>
+
+              <div className="flex justify-end md:col-span-2">
+                <span className="text-2xl transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
+                  ↗
+                </span>
+              </div>
+
+            </div>
+          </Link>
+
+        </div>
+      </section>
+
+
+      {/* Process */}
+      <section className="bg-[#E3DDD5] text-[#171512]">
+        <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
+
+          <p className="text-sm uppercase tracking-[0.22em] text-[#756F68]">
             How We Work
           </p>
 
           <div className="mt-5 flex flex-col justify-between gap-8 md:flex-row md:items-end">
+
             <h2 className="max-w-3xl text-3xl font-semibold leading-[1.15] tracking-[-0.035em] sm:text-4xl md:text-5xl">
               발견하고, 구조화하고,
               <br className="hidden sm:block" />
               만들고, 개선합니다.
             </h2>
 
-            <p className="mt-6">
-              추상적인 기술 시연보다 실제로 사용하고 개선할 수 있는
-              결과물을 중요하게 생각합니다.
+            <p className="max-w-md leading-relaxed text-[#69635C]">
+              추상적인 기술 시연보다
+              실제로 사용하고 개선할 수 있는 결과물을 중요하게 생각합니다.
             </p>
+
           </div>
 
-          <div className="mt-16 grid border-l border-t border-white/15 md:grid-cols-4">
+          <div className="mt-16 grid border-l border-t border-black/10 md:grid-cols-4">
+
             {process.map((item) => (
               <article
                 key={item.title}
-                className="min-h-72 border-b border-r border-white/15 p-6 md:p-7"
+                className="min-h-72 border-b border-r border-black/10 p-6 md:p-7"
               >
-                <p className="text-sm text-white/35">{item.number}</p>
+                <p className="text-sm text-[#9B938A]">
+                  {item.number}
+                </p>
 
                 <div className="mt-16">
-                  <p className="text-sm text-white/45">{item.korean}</p>
+                  <p className="text-sm text-[#756F68]">
+                    {item.korean}
+                  </p>
 
                   <h3 className="mt-2 text-2xl font-medium tracking-[-0.02em]">
                     {item.title}
                   </h3>
 
-                  <p className="mt-5 leading-relaxed text-white/55">
+                  <p className="mt-5 leading-relaxed text-[#69635C]">
                     {item.description}
                   </p>
                 </div>
+
               </article>
             ))}
+
           </div>
         </div>
       </section>
 
-      {/* Projects */}
+
+      {/* Current Work */}
       <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <div>
-          <p className="text-sm uppercase tracking-[0.22em] text-neutral-500">
-            Selected Projects
+
+        <p className="text-sm uppercase tracking-[0.22em] text-[#756F68]">
+          Current Work
+        </p>
+
+        <div className="mt-4 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+
+          <h2 className="text-4xl font-semibold tracking-[-0.035em] md:text-5xl">
+            지금 만들고 있는 것
+          </h2>
+
+          <p className="max-w-md leading-relaxed text-[#69635C]">
+            브랜드, 제품, 도구와 데이터 인프라를
+            각각의 목적에 맞게 운영하고 있습니다.
           </p>
 
-          <h2 className="mt-4 text-4xl font-semibold tracking-[-0.035em] md:text-5xl">
-            프로젝트
-          </h2>
         </div>
 
-        {/* Internal Brands */}
-        <div className="mt-14">
-          <div className="grid gap-6 border-b border-black/15 pb-8 md:grid-cols-12 md:items-end">
-            <div className="md:col-span-5">
-              <p className="text-sm uppercase tracking-[0.22em] text-neutral-500">
-                Internal Brands
+        <div className="mt-14 border-t border-black/15">
+
+          {currentWork.map((item) => (
+            <Link
+              key={item.number}
+              href={item.href}
+              className="group grid gap-5 border-b border-black/15 py-9 transition-colors hover:bg-white/45 md:grid-cols-12 md:items-center md:px-4"
+            >
+              <span className="text-sm text-[#9B938A] md:col-span-1">
+                {item.number}
+              </span>
+
+              <div className="md:col-span-4">
+                <p className="text-xs uppercase tracking-[0.16em] text-[#8A8279]">
+                  {item.eyebrow}
+                </p>
+
+                <h3 className="mt-2 text-2xl font-semibold tracking-[-0.025em]">
+                  {item.title}
+                </h3>
+              </div>
+
+              <p className="max-w-xl leading-relaxed text-[#69635C] md:col-span-5">
+                {item.description}
               </p>
 
-              <h3 className="mt-3 text-2xl font-semibold tracking-[-0.025em] md:text-3xl">
-                자체 개발 브랜드
-              </h3>
-            </div>
-
-            <p className="text-sm leading-7 text-neutral-600 md:col-span-7">
-              DustyDraft가 직접 기획하고 개발하며 운영하는 브랜드와 서비스입니다.
-            </p>
-          </div>
-
-          <div>
-            {internalBrands.map((brand, index) => {
-              const content = (
-                <>
-                  <span className="text-sm text-neutral-400 md:col-span-1">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-
-                  <div className="md:col-span-3">
-                    <h4 className="text-xl font-semibold tracking-[-0.025em] md:text-2xl">
-                      {brand.name}
-                    </h4>
-
-                    <p className="mt-2 text-xs uppercase tracking-[0.14em] text-neutral-400">
-                      {brand.isPublic ? "Public Brand" : "Private Brand"}
-                    </p>
-                  </div>
-
-                  <div className="md:col-span-6">
-                    <p className="max-w-xl leading-relaxed text-neutral-600">
-                      {brand.description}
-                    </p>
-
-                    <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2">
-                      {brand.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="text-xs uppercase tracking-[0.12em] text-neutral-500"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="flex justify-end md:col-span-2">
-                    {brand.isPublic ? (
-                      <span className="text-xl transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
-                        ↗
-                      </span>
-                    ) : (
-                      <span className="rounded-full border border-black/15 px-3 py-2 text-[10px] uppercase tracking-[0.16em] text-neutral-500">
-                        Private
-                      </span>
-                    )}
-                  </div>
-                </>
-              );
-
-              return brand.isPublic ? (
-                <a
-                  key={brand.name}
-                  href={brand.href}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="group grid gap-5 border-b border-black/15 py-8 transition-colors hover:bg-white/20 md:grid-cols-12 md:items-start md:gap-8 md:px-4"
-                >
-                  {content}
-                </a>
-              ) : (
-                <article
-                  key={brand.name}
-                  className="grid gap-5 border-b border-black/15 py-8 md:grid-cols-12 md:items-start md:gap-8 md:px-4"
-                >
-                  {content}
-                </article>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Confidential Projects */}
-        <div className="mt-24">
-          <div className="flex items-end justify-between border-b border-black/15 pb-8">
-            <div>
-              <p className="text-sm uppercase tracking-[0.22em] text-neutral-500">
-                Confidential Projects
-              </p>
-
-              <h3 className="mt-3 text-2xl font-semibold tracking-[-0.025em] md:text-3xl">
-                비공개 프로젝트
-              </h3>
-            </div>
-
-            <p className="text-sm leading-7 text-neutral-600 whitespace-nowrap">
-              세부 기능과 구현 방식은 공개하지 않고 시스템 설계와 아키텍처
-              범위만 소개합니다.
-            </p>
-          </div>
-
-          <div className="mt-8 border-t border-black/15">
-            {confidentialProjects.map((project) => (
-              <article
-                key={project.number}
-                className="grid gap-5 border-b border-black/15 py-8 md:grid-cols-12 md:items-center md:gap-8 md:px-4"
-              >
-                <span className="text-sm text-neutral-400 md:col-span-1">
-                  {project.number}
+              <div className="flex justify-end md:col-span-2">
+                <span className="hidden text-sm text-[#756F68] lg:inline">
+                  {item.label}
                 </span>
 
-                <div className="md:col-span-5">
-                  <h4 className="text-xl font-semibold tracking-[-0.02em] md:text-2xl">
-                    {project.title}
-                  </h4>
+                <span className="ml-4 text-xl transition-transform duration-300 group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
 
-                  <p className="mt-2 text-sm text-neutral-500">
-                    {project.type}
-                  </p>
-                </div>
+            </Link>
+          ))}
 
-                <div className="md:col-span-4">
-                  <div className="flex items-center gap-3 text-sm text-neutral-500">
-                    <span>Input</span>
-                    <span>→</span>
-                    <span>Structure</span>
-                    <span>→</span>
-                    <span>Output</span>
-                  </div>
-                </div>
-
-                <div className="md:col-span-2 md:text-right">
-                  <span className="inline-flex rounded-full border border-black/15 px-4 py-2 text-xs uppercase tracking-[0.14em] text-neutral-500">
-                    {project.status}
-                  </span>
-                </div>
-              </article>
-            ))}
-          </div>
         </div>
-      </section>  
+      </section>
+
 
       {/* Founder */}
-      <section className="border-y border-black/10 bg-white/20">
+      <section className="border-y border-black/10 bg-[#EAE4DC]">
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-12 md:py-28">
+
           <div className="md:col-span-4">
-            <p className="text-sm uppercase tracking-[0.22em] text-neutral-500">
+            <p className="text-sm uppercase tracking-[0.22em] text-[#756F68]">
               Founder
             </p>
 
@@ -480,34 +516,37 @@ export default function AboutPage() {
               Jang So Young
             </h2>
 
-            <p className="mt-3 text-neutral-500">
+            <p className="mt-3 text-[#756F68]">
               Founder & Independent Builder
             </p>
           </div>
 
           <div className="md:col-span-8">
+
             <p className="max-w-3xl text-2xl leading-relaxed tracking-[-0.02em] md:text-3xl">
               AI 개발과 컨설팅 경험을 바탕으로,
               <br className="hidden md:block" />
               기술과 실제 산업을 연결하는 도구를 만듭니다.
             </p>
 
-            <div className="mt-9 max-w-2xl space-y-5 leading-relaxed text-neutral-600">
+            <div className="mt-9 max-w-2xl space-y-5 leading-relaxed text-[#69635C]">
+
               <p>
                 전기전자공학을 전공하고 AI 개발과 컨설팅 업무를 수행해
-                왔습니다. 현재는 AI, 데이터와 자동화 기술을 활용한 디지털
-                도구를 개발하며 부동산 실무와 독립 브랜드 및 콘텐츠
-                사업을 함께 운영하고 있습니다.
+                왔습니다. 현재는 AI, 데이터와 자동화 기술을 활용한
+                디지털 도구를 개발하고 다양한 독립 프로젝트를 운영합니다.
               </p>
 
               <p>
-                서로 달라 보이는 분야에서도 반복되는 문제를 발견하고,
-                이를 구조화하여 실제로 사용할 수 있는 시스템으로 만드는
-                데 집중합니다.
+                서로 달라 보이는 분야에서도 반복되는 문제와 연결점을 찾고,
+                이를 구조화하여 실제로 사용할 수 있는 시스템과 브랜드로
+                발전시키는 데 관심을 두고 있습니다.
               </p>
+
             </div>
 
             <div className="mt-10 flex flex-wrap gap-3">
+
               {[
                 "AI Development",
                 "Workflow Automation",
@@ -517,43 +556,61 @@ export default function AboutPage() {
               ].map((item) => (
                 <span
                   key={item}
-                  className="rounded-full border border-black/15 px-4 py-2 text-sm text-neutral-600"
+                  className="rounded-full border border-black/15 px-4 py-2 text-sm text-[#69635C]"
                 >
                   {item}
                 </span>
               ))}
+
             </div>
+
           </div>
         </div>
       </section>
 
+
       {/* Overview & Contact */}
       <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
+
         <div className="grid gap-16 md:grid-cols-2">
+
+          {/* Overview */}
           <div>
-            <p className="text-sm uppercase tracking-[0.22em] text-neutral-500">
+            <p className="text-sm uppercase tracking-[0.22em] text-[#756F68]">
               Overview
             </p>
 
             <div className="mt-8 border-t border-black/15">
+
               {[
                 ["Founded", "2019"],
                 ["Location", "Seoul, South Korea"],
-                ["Focus", "AI, Automation, Data & Creative Technology"],
+                [
+                  "Focus",
+                  "AI, Automation, Data, Products & Creative Technology",
+                ],
               ].map(([label, value]) => (
                 <div
                   key={label}
                   className="grid grid-cols-3 gap-4 border-b border-black/15 py-5"
                 >
-                  <p className="text-sm text-neutral-500">{label}</p>
-                  <p className="col-span-2">{value}</p>
+                  <p className="text-sm text-[#756F68]">
+                    {label}
+                  </p>
+
+                  <p className="col-span-2">
+                    {value}
+                  </p>
                 </div>
               ))}
+
             </div>
           </div>
 
+
+          {/* Contact */}
           <div>
-            <p className="text-sm uppercase tracking-[0.22em] text-neutral-500">
+            <p className="text-sm uppercase tracking-[0.22em] text-[#756F68]">
               Contact
             </p>
 
@@ -568,19 +625,25 @@ export default function AboutPage() {
               className="group mt-10 inline-flex items-center gap-4 border-b border-black pb-2 text-lg"
             >
               soyoung@draft.best
+
               <span className="transition-transform duration-300 group-hover:translate-x-1">
                 ↗
               </span>
             </a>
           </div>
+
         </div>
       </section>
 
+
       {/* Closing */}
       <section className="px-6 pb-6">
-        <div className="mx-auto flex min-h-[55vh] max-w-6xl items-end rounded-3xl bg-neutral-900 p-7 text-[#ede4da] md:p-12">
+
+        <div className="mx-auto flex min-h-[55vh] max-w-6xl items-end rounded-3xl bg-[#171717] p-7 text-[#F4F0EA] md:p-12">
+
           <div className="w-full">
-            <p className="text-sm uppercase tracking-[0.22em] text-white/40">
+
+            <p className="text-sm uppercase tracking-[0.22em] text-white/35">
               DustyDraft
             </p>
 
@@ -590,13 +653,16 @@ export default function AboutPage() {
               More room to create.
             </p>
 
-            <div className="mt-12 flex flex-col justify-between gap-4 border-t border-white/15 pt-5 text-sm text-white/45 md:flex-row">
+            <div className="mt-12 flex flex-col justify-between gap-4 border-t border-white/15 pt-5 text-sm text-white/40 md:flex-row">
               <p>Independent Technology Studio</p>
               <p>Seoul, South Korea</p>
             </div>
+
           </div>
         </div>
+
       </section>
+
     </main>
   );
 }

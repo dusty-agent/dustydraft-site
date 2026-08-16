@@ -8,16 +8,89 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+
+  /* ========================================
+     DUSTYDRAFT
+     ======================================== */
+
+  --color-dd-ivory: #F4F0EA;
+  --color-dd-warm-gray: #EAE4DC;
+
+  --color-dd-sand: #D8C3A5;
+  --color-dd-sand-line: #B9A384;
+
+  --color-dd-gray: #ECEDEB;
+  --color-dd-gray-card: #F5F5F3;
+
+  --color-dd-paper: #F3EFE7;
+  --color-dd-paper-card: #FAF8F3;
+
+  --color-dd-neutral: #EEECE8;
+
+  --color-dd-ink: #171512;
+  --color-dd-black: #111111;
+  --color-dd-white: #F7F7F5;
+
+
+  /* ========================================
+     DUSTIE
+     ======================================== */
+
+  --color-dustie-mint: #CDEFE8;
+  --color-dustie-mint-soft: #EAF8F5;
+  --color-dustie-ink: #173D38;
+
+
+  /* ========================================
+   ASSETPICKER
+   ======================================== */
+
+  --color-ap-sand: #E7D7BC;
+  --color-ap-paper: #F3EEE5;
+  --color-ap-navy: #162B45;
+  --color-ap-navy-soft: #29445F;
+  --color-ap-ink: #18202A;
+  --color-ap-muted: #73777A;
+  --color-ap-line: #C8BBA7;
+
+
+  /* ========================================
+     EXOTIC ORDINARY
+     ======================================== */
+
+  --color-eo-pink: #F3E3E3;
+  --color-eo-pink-soft: #FAF2F2;
+  --color-eo-ink: #2A2020;
+
+
+  /* ========================================
+     THE EXOTIC VOUTIQUE
+     ======================================== */
+
+  --color-voutique-black: #090909;
+  --color-voutique-pink: #E9A7AD;
+
+
+  /* ========================================
+     VOUTIQ
+     ======================================== */
+
+  --color-voutiq-neutral: #ECE9E7;
+  --color-voutiq-pink: #C9858D;
+
+
+  /* ========================================
+     THE EXOTIC BOUTIQUE
+     ======================================== */
+
+  --color-boutique-cream: #F6EFE7;
+  --color-boutique-pink: #C88F91;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   background: var(--background);

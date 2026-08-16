@@ -1,5 +1,5 @@
 export default function ProductsPage() {
-  return ( <main className="min-h-screen bg-[#ede4da] text-neutral-900">
+  return ( <main className="min-h-screen bg-dd-gray text-dd-ink">
   
     {/* Hero */}
     <section className="max-w-5xl mx-auto px-6 py-8 md:py-10">
