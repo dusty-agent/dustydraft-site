@@ -41,6 +41,13 @@ export default function Header() {
           </Link>
 
           <Link
+            href="/data"
+            className="hidden sm:inline hover:opacity-50 transition"
+          >
+            Data
+          </Link>
+
+          <Link
             href="/workspace"
             className="hidden sm:inline hover:opacity-50 transition"
           >
